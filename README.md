@@ -1,15 +1,10 @@
-# Tela de Login e Cadastro Interativa
+# {ff00ff} Forum Rede Play Start 
 
-Código referente as video aulas ministradas no Canal do YouTube - Guilherme Chinaglia
+https://redeplaystart.com
 
-### Link YouTube: [Guilherme Chinaglia](https://www.youtube.com/channel/UCEkMd3Bw_bVUuGbXU0sFPSg/featured?view_as=subscriber)
+https://discord.gg/redeplaystart
 
-## Se ainda não é inscrito no Canal, se inscreva e ative as notificações para receber novos vídeos toda semana!!
+Ip do servidor: redeplaystart.ddnsking.com:7777
 
-[Instagram - Guilherme Chinaglia](https://www.instagram.com/guilhermechinagliadev/)
 
-@guilhermechinagliadev
-
-Abraço à todos,
-
-Guilherme Chinaglia
+TS Do servidor: redeplaystart.ts3.com
