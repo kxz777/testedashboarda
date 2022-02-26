@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
+
 import { useState } from 'react';
 import 'teladelogin.css';
 
@@ -63,7 +61,7 @@ const LoginForm = (props) => {
 
   return (
     <div className="d-flex justify-content-center flex-column px-3 mx-auto" style={{width: '643px'}}>
-      <img src="./assets/images/logobpg.png" className="mx-auto" style={{height:'250px', width:'312px'}} alt="BPG Fórum - Cadastro" />
+      <img src="./assets/images/logo1.png" className="mx-auto" style={{height:'250px', width:'312px'}} alt="BPG Fórum - Cadastro" />
       <div id="form-container" className='w-100 px-3'>
         <h1>Bem vindo de volta</h1>
         <h2>sentimos a sua falta!</h2>
@@ -94,7 +92,7 @@ const Auth = () => {
   const [isLoginForm, setIsLoginForm] = useState(true);
 
   $('div#container').addClass('m-0')
-  $('body').css({'background':"url('./assets/images/lossantos-1.jpg') no-repeat", 'background-size':'cover'});
+  $('body').css({'background':"url('./assets/images/logo1.png') no-repeat", 'background-size':'cover'});
 
 
   return (
@@ -109,4 +107,3 @@ const Auth = () => {
 };
 
 export default Auth;
- </html>
