@@ -354,7 +354,7 @@
                                             <div class="input-group mb-3 m-auto" style="max-width: 400px;">
                                                 <input type="text" class="form-control" readonly="true" id="copiaColaPix" value="00020126580014br.gov.bcb.pix0136ab560b51-ea86-43fe-840c-c7be6226c05e27600016BR.COM.PAGSEGURO0136ECF36A76-9D23-4C76-8B7D-5ED100EB1BA55204000053039865802BR5922MARIA APARECIDA SANTOS6005BETIM62290525PAGS000000000220227165486630417F8">
                                                 <div class="input-group-append" onclick="copiarPix()">
-                                                    <span class="input-group-text text-white" style="background: #7e13b0;"><i class="fal fa-copy"></i></span>
+                                                    <span class="input-group-text text-white" style="background: #F30A0A;"><i class="fal fa-copy"></i></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -709,7 +709,7 @@
                                                     text: data.responseText,
                                                     icon: 'error',
                                                     showCancelButton: false,
-                                                    confirmButtonColor: '#cc0000',
+                                                    confirmButtonColor: '#F30A0A',
                                                     cancelButtonColor: '#d33',
                                                     confirmButtonText: 'Okay!'
                                                 });
@@ -772,7 +772,7 @@
                                             <div class="input-group mb-3 m-auto" style="max-width: 400px;">
                                                 <input type="text" class="form-control" readonly="true" id="copiaColaPix" value="${data.emv}">
                                                 <div class="input-group-append" onclick="copiarPix()">
-                                                    <span class="input-group-text text-white" style="background: #7e13b0;"><i class="fal fa-copy"></i></span>
+                                                    <span class="input-group-text text-white" style="background: #F30A0A;"><i class="fal fa-copy"></i></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -799,7 +799,7 @@
                                             <div class="input-group mb-3 m-auto" style="max-width: 400px;">
                                                 <input type="text" class="form-control" readonly="true" id="copiaColaBoleto" value="${data.bar_code}">
                                                 <div class="input-group-append" onclick="copiarBoleto()">
-                                                    <span class="input-group-text text-white" style="background: #7e13b0;"><i class="fal fa-copy"></i></span>
+                                                    <span class="input-group-text text-white" style="background: #F30A0A;"><i class="fal fa-copy"></i></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -828,7 +828,7 @@
                             text: data.responseText,
                             icon: 'error',
                             showCancelButton: false,
-                            confirmButtonColor: '#cc0000',
+                            confirmButtonColor: '#F30A0A',
                             cancelButtonColor: '#d33',
                             confirmButtonText: 'Okay!'
                         })
@@ -843,8 +843,8 @@
                     title: 'Ops!',
                     text: "ERROR - Tente novamente!",
                     icon: 'error',
-                    showCancelButton: false,
-                    confirmButtonColor: '#cc0000',
+                    showCancelButton: false,        
+                   confirmButtonColor: '#F30A0A',
                     cancelButtonColor: '#d33',
                     confirmButtonText: 'Okay!'
                 });
@@ -857,10 +857,10 @@
         function valCPF(){let r=$("#cpfINPUT").val();var e,n;if(e=0,"00000000000"==(r=(r=(r=r.replace(".","")).replace(".","")).replace("-","")))return!1;for(i=1;i<=9;i++)e+=parseInt(r.substring(i-1,i))*(11-i);if(10!=(n=10*e%11)&&11!=n||(n=0),n!=parseInt(r.substring(9,10)))return!1;for(e=0,i=1;i<=10;i++)e+=parseInt(r.substring(i-1,i))*(12-i);return 10!=(n=10*e%11)&&11!=n||(n=0),n==parseInt(r.substring(10,11))}
                 
         //Copiar PixCopiaCola
-        function copiarPix(){$("#copiaColaPix").select(),document.execCommand("copy"),Swal.fire({title:"Copiado com sucesso!",icon:"success",showCancelButton:!1,confirmButtonColor:"#0969ff",cancelButtonColor:"#d33",confirmButtonText:"Okay!"})}
+        function copiarPix(){$("#copiaColaPix").select(),document.execCommand("copy"),Swal.fire({title:"Copiado com sucesso!",icon:"success",showCancelButton:!1,confirmButtonColor:"#F30A0A",cancelButtonColor:"#d33",confirmButtonText:"Okay!"})}
 
         //Copiar Boleto
-        function copiarBoleto(){$("#copiaColaBoleto").select(),document.execCommand("copy"),Swal.fire({title:"Copiado com sucesso!",icon:"success",showCancelButton:!1,confirmButtonColor:"#0969ff",cancelButtonColor:"#d33",confirmButtonText:"Okay!"})}
+        function copiarBoleto(){$("#copiaColaBoleto").select(),document.execCommand("copy"),Swal.fire({title:"Copiado com sucesso!",icon:"success",showCancelButton:!1,confirmButtonColor:"#F30A0A",cancelButtonColor:"#d33",confirmButtonText:"Okay!"})}
 
         //Recuperar Status
         function attStatus(a,t){let e={_token:$('meta[name="csrf-token"]').attr("content"),id:a};$.ajax({type:"POST",url:"/api/pay/status",data:e,dataType:"json",success:function(a){"Aprovado"==a.text?($("#container").html(`<div class="col-lg-6"><div class="section_tittle text-center animated fadeInUp"><i class="fal fa-check-circle text-success" style="font-size: 90px;margin-bottom: 20px;"></i><h3>Pedido ${t} foi aprovado!</h3><p style="text-transform: none !important;">Seu pedido foi aprovado pela plataforma e ativado em nosso sistema, agradecemos sua confiança em nosso servidor e estamos trabalhando diaramente para trazer mais diversão a todos! <br> Use /lojavip para receber suas moedas vip.</p></div></div><div class="col-12 layout-spacing animated fadeInRight"><div class="row"><div class="col-12 text-center"><p class="text-center"><a targer="_blank" href="/comprar-mv" class="btn btn-shox mt-2">Comprar Novamente</a></div></div></div>`),clearInterval(timer1)):"Cancelado"==a.text&&($("#container").html(`<div class="col-lg-6"><div class="section_tittle text-center animated fadeInUp"><i class="fal fa-times-circle text-danger" style="font-size: 90px;margin-bottom: 20px;"></i><h3>Pedido ${t} foi recusado!</h3><p style="text-transform: none !important;">Seu pedido foi recusado pela plataforma, e cancelado em nosso sistema.</p></div></div><div class="col-12 layout-spacing animated fadeInRight"><div class="row"><div class="col-12 text-center"><p class="text-center"><a targer="_blank" href="/comprar-mv" class="btn btn-shox mt-2">Comprar Novamente</a></div></div></div>`),clearInterval(timer1))}})}
