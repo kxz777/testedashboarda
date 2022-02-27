@@ -1,915 +1,174 @@
-<html lang="pt-br" id="inicio" class=""><head><style>.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row;padding:0}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;padding:0;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-no-transition{transition:none!important}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center;padding:0 1.8em}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-actions.swal2-loading .swal2-styled.swal2-confirm{box-sizing:border-box;width:2.5em;height:2.5em;margin:.46875em;padding:0;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent!important;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{content:"";display:inline-block;width:15px;height:15px;margin-left:5px;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff}.swal2-styled{margin:.3125em;padding:.625em 2em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;height:.25em;overflow:hidden;border-bottom-right-radius:.3125em;border-bottom-left-radius:.3125em}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;align-items:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0 1.6em;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::-ms-input-placeholder,.swal2-input::-ms-input-placeholder,.swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;width:2.5em;height:.4em;margin:0 -1px;background:#3085d6}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}</style><script src="https://www.paypal.com/tagmanager/pptm.js?id=www.brasilplayshox.com.br&amp;t=xo&amp;v=5.0.282&amp;source=payments_sdk&amp;client_id=ASEivpOat_iYcBSRmTriAMth5IJA8TvGRG1gCKkWHY4e8lJz_kG2LvGDX0gXnhl_4BX6aowhvWXAWHZq&amp;vault=false" id="xo-pptm" async=""></script></head><body style="padding-top: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; padding-right: 0px;" class="">
-
-
-
-
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="csrf-token" content="a4rw9oImHIJDI5SPXedIhvtHTTliKR7pE1lWhdbD">
-    <meta name="description" content="Nós somos o maior servidor rpg da atualidade do samp, estamos em constantes atualizações sempre trazendo novidades e garantindo a diversão de nossos jogadores, você pode jogar pelo seu Computador ou pelo seu smartphone Android.">
-    <meta name="keywords" content="SAMP, Android, Play, Shox, Brasil, RPG, Servidor, GTA, SA">
-    <meta name="author" content="Thur_Shox">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Rede PlayStart - Comprar MV</title>
-    <link rel="icon" href="../072018/images/logo3.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://www.brasilplayshox.com.br/assets_site/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.brasilplayshox.com.br/assets_site/css/animate.css">
-    <link rel="stylesheet" href="https://www.brasilplayshox.com.br/assets_site/css/style.css">
-    <link rel="stylesheet" href="https://www.brasilplayshox.com.br/assets_all/fontawesome/css/all.css" type="text/css">
-    <style>
-        body {
-            padding-right: 0 !important;
-            background: #fff;
-        }
-
-        .btn-link-servers
-        {
-            width: 60px;
-            font-size: 11px;
-            border: 1px solid #8a8194;
-            border-radius: 200px;
-            margin-top: 5px;
-        }
-
-        .btn-link-servers:hover
-        {
-            background: #cebcd8;
-        }
-
-        @media  screen and (max-width: 1201px) {
-            .single_page_logo>img
-            {
-                width: 150px;
+<html lang="pt-br"><head>
+        <meta charset="utf-8">
+        <meta name="csrf-token" content="6TEGRxNcBUuSTFHLZZloVJswDgEVdgbTnMB0gM8A">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <title>PlayShox - Entre em sua conta</title>
+        <link rel="icon" type="image/x-icon" href="https://redeplaystart.pages.dev/072018/images/logo1.png">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
+        <link href="https://www.brasilplayshox.com.br/assets_ucp/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://www.brasilplayshox.com.br/assets_ucp/css/plugins.css" rel="stylesheet" type="text/css">
+        <link href="https://www.brasilplayshox.com.br/assets_ucp/css/structure.css" rel="stylesheet" type="text/css">
+        <link href="https://www.brasilplayshox.com.br/assets_ucp/pages/css/auth.min.css" rel="stylesheet" type="text/css">
+        <style>            
+            .url_footer:hover {
+                text-decoration: underline !important;
+                cursor: pointer;
             }
+        </style>
+            <style>
+        .custom-control-input:checked~.custom-control-label::before {
+            color: #fff;
+            border-color: #5c1ac3;
+            background-color: #5c1ac3;
         }
-
-        @media (max-width: 991px){
-            .banner_part .banner_text {
-                height: 505px;
-            }
-
-            #servers
-            {
-                display: none
-            }
-        }
-
-        @media (max-width: 300px){
-            .home_page_btn
-            {
-                display: none;
-            }
-        }
-
-        #equipe
-        {
-            margin-top: 60px;
-        }
-
-        
     </style>
-        <link rel="stylesheet" type="text/css" href="https://www.brasilplayshox.com.br/assets_ucp/css/forms/switches.css">
-    <link rel="stylesheet" type="text/css" href="https://www.brasilplayshox.com.br/assets_ucp/plugins/pricing-table/css/component.css">
-    <link rel="stylesheet" type="text/css" href="https://www.brasilplayshox.com.br/assets_ucp/plugins/jquery-ui/jquery-ui.min.css">
-
-    <style>
-        body {
-            padding-right: 0 !important;
-            background: #fff;
-        }
-
-        .btn-link-servers
-        {
-            width: 60px;
-            font-size: 11px;
-            border: 1px solid #8a8194;
-            border-radius: 200px;
-            margin-top: 5px;
-        }
-
-        .btn-link-servers:hover
-        {
-            background: #cebcd8;
-        }
-
-        @media  screen and (max-width: 1201px) {
-            .single_page_logo>img
-            {
-                width: 150px;
-            }
-        }
-
-        @media (max-width: 991px){
-            .banner_part .banner_text {
-                height: 505px;
-            }
-
-            #servers
-            {
-                display: none
-            }
-        }
-
-        @media (max-width: 300px){
-            .home_page_btn
-            {
-                display: none;
-            }
-        }
-
-        .btn-shox {
-            color: #fff;
-            background-color: #56037d;
-            border-color: #56037d;
-        }
-
-        .btn-shox:hover {
-            color: #fff;
-            background-color: #470367;
-            border-color: #450065;
-        }
-
-        .btn-shox:active {
-            color: #fff;
-            background-color: #470367;
-            border-color: #450065;
-        }
-
-        .box-servers{
-            -webkit-transition: all 1sp
-            -moz-transition: all 1s;
-            transition: all 1s;
-            color: #3b3f5c;
-            display: block;
-            width: 6.25rem;
-            height: 6.25rem;
-            border-radius: 0.25rem;
-            text-align: center;
-            line-height: 6.25rem;
-            font-size: 1.875rem;
-            -webkit-box-shadow: 0px 0px 15px 1px rgb(113 106 202 / 20%);
-            -moz-box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
-            box-shadow: 0px 0px 15px 1px rgb(113 106 202 / 20%);
-            border-radius: 0.25rem;
-            border: 2px solid #5c1ac3;
-            background: #fff;
-            color: #5c1ac3;
-            font-weight: 700
-        }
-
-        .box-servers:hover
-        {            
-            background: #00ff00;
-            color: white;
-        }
-
-        .box-servers-active
-        {            
-            background: #5c1ac3;
-            color: white;
-            box-shadow: 0px 0px 15px 1px #5c1ac3;
-        }
-        
-        .img-payment{
-            border-radius: 10px;
-            border: 2px solid grey;
-            filter: grayscale(100%);
-            transition: all ease-out 1s;
-        }
-        .img-payment:hover{
-            border-radius: 10px;
-            border: 2px solid dodgerblue;
-            filter: grayscale(0%);
-        }
-
-        .img-payment-active
-        {
-            border-radius: 10px;
-            border: 2px solid dodgerblue;
-            filter: grayscale(0%);
-        }
-        
-    </style>
-
-
-    <header class="main_menu menu_fixed" style="min-height: 70px; position: absolute;">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand main_logo" href="/"> <img src="https://redeplaystart.pages.dev/072018/images/logo3.png" alt="logo" style="width: 235px;top: -10px;"> </a>
-                        <a class="navbar-brand single_page_logo" href="/"> <img src="https://redeplaystart.pages.dev/072018/images/logo3.png" alt="logo"> </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars text-white"></i>
-                        </button>
-                        
-                    
-                   </div>
+    <style>.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4!important;grid-row:1/4!important;grid-template-columns:1fr 99fr 1fr;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px rgba(0,0,0,.075),0 1px 2px rgba(0,0,0,.075),1px 2px 4px rgba(0,0,0,.075),1px 3px 8px rgba(0,0,0,.075),2px 4px 16px rgba(0,0,0,.075);pointer-events:all}.swal2-popup.swal2-toast>*{grid-column:2}.swal2-popup.swal2-toast .swal2-title{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-loading{justify-content:center}.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-popup.swal2-toast .swal2-html-container{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:grid;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto);grid-template-rows:minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,auto);height:100%;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-bottom-start,.swal2-container.swal2-center-start,.swal2-container.swal2-top-start{grid-template-columns:minmax(0,1fr) auto auto}.swal2-container.swal2-bottom,.swal2-container.swal2-center,.swal2-container.swal2-top{grid-template-columns:auto minmax(0,1fr) auto}.swal2-container.swal2-bottom-end,.swal2-container.swal2-center-end,.swal2-container.swal2-top-end{grid-template-columns:auto auto minmax(0,1fr)}.swal2-container.swal2-top-start>.swal2-popup{align-self:start}.swal2-container.swal2-top>.swal2-popup{grid-column:2;align-self:start;justify-self:center}.swal2-container.swal2-top-end>.swal2-popup,.swal2-container.swal2-top-right>.swal2-popup{grid-column:3;align-self:start;justify-self:end}.swal2-container.swal2-center-left>.swal2-popup,.swal2-container.swal2-center-start>.swal2-popup{grid-row:2;align-self:center}.swal2-container.swal2-center>.swal2-popup{grid-column:2;grid-row:2;align-self:center;justify-self:center}.swal2-container.swal2-center-end>.swal2-popup,.swal2-container.swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;align-self:center;justify-self:end}.swal2-container.swal2-bottom-left>.swal2-popup,.swal2-container.swal2-bottom-start>.swal2-popup{grid-column:1;grid-row:3;align-self:end}.swal2-container.swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;justify-self:center;align-self:end}.swal2-container.swal2-bottom-end>.swal2-popup,.swal2-container.swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;align-self:end;justify-self:end}.swal2-container.swal2-grow-fullscreen>.swal2-popup,.swal2-container.swal2-grow-row>.swal2-popup{grid-column:1/4;width:100%}.swal2-container.swal2-grow-column>.swal2-popup,.swal2-container.swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}.swal2-container.swal2-no-transition{transition:none!important}.swal2-popup{display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0,100%);width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;color:#545454;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-title{position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:auto;margin:1.25em auto 0;padding:0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 transparent #2778c4 transparent}.swal2-styled{margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px transparent;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#7066e0;color:#fff;font-size:1em}.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px rgba(112,102,224,.5)}.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#dc3741;color:#fff;font-size:1em}.swal2-styled.swal2-deny:focus{box-shadow:0 0 0 3px rgba(220,55,65,.5)}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#6e7881;color:#fff;font-size:1em}.swal2-styled.swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,120,129,.5)}.swal2-styled.swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-styled:focus{outline:0}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:inherit;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto!important;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:2em auto 1em}.swal2-close{z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}.swal2-close::-moz-focus-inner{border:0}.swal2-html-container{z-index:1;justify-content:center;margin:1em 1.6em .3em;padding:0;overflow:auto;color:inherit;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em 2em 3px}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px transparent;color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em 2em 3px;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-file{width:75%;margin-right:auto;margin-left:auto;background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{flex-shrink:0;margin:0 .4em}.swal2-input-label{display:flex;justify-content:center;margin:1em auto 0}.swal2-validation-message{align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:.25em solid transparent;border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-warning.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-warning.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-i-mark .5s;animation:swal2-animate-i-mark .5s}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-info.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-info.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-i-mark .8s;animation:swal2-animate-i-mark .8s}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-question.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-question.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-question-mark .8s;animation:swal2-animate-question-mark .8s}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-webkit-keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@-webkit-keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{background-color:transparent!important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:transparent;pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}</style></head>
+    <body class="form">
+        <div class="form-container">
+            <div class="form-form">
+                <div class="form-form-wrap">
+                    <div class="form-container">
+                        <div class="form-content">
+                                <h3 class="">Acesse sua conta<br> e diverta-se!</h3>
+    <p class="signup-link">Você não tem uma conta? <a href="https://www.brasilplayshox.com.br/registro">crie agora</a></p>
+    <form class="text-left" id="loginForm">
+        <div class="form">           
+            <input type="hidden" name="_token" value="6TEGRxNcBUuSTFHLZZloVJswDgEVdgbTnMB0gM8A">            <input type="hidden" name="recaptcha" class="recaptcha" value="03AGdBq27tsdvldQusdpvWhF_ljF0VQWC-uTnQ1aSTxx3ShEnaBg0cNQ6tDFVX4NRcuYHMCwVc_V3AFxUOSGxKt5z1cR1xPa_TSTWKr0Vc9W_Z0JtaqJwl9sONecglGHPe37sT3BoXTlpf3Bh5Ytf1JnP0oAYehTU0UxCstvUytxXbAIPc8wrqRJt6ZYPpn1odSdKK4B1MyCLSss5kZxAqsJ8N76NtYz-3OKmVT1KCnLvd_HXCdp06KSkNP3z5osIfYwG3Z7K5dj12N7m68mbAKDB3J-j5vXNXbFBe5khwSRnD7v3POKLcKvddXmHQkv8OdEx425aqiln7ZDMdIi_yX02CfWjV70IRWVb0MXN81ak5F1D_ZdmBhps-9iKNnte4UVwZBNjjSo8Pc_OYHIUV_0N0h1lDPP1nmwHiD6F7wgXEdoCohFzcS8Z3D-pPvijWKqXBMaQIcJHLqlfcqFOrzg6F7H1O8VqyV1ijWKLlyHUeAod0P-KbM2e1DFyFexiEdC1_ID-Br5vmzzmJ7rPNE1gOri_J5mZCFw">
+            <div id="username-field" class="field-wrapper input">
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email">
+                <small id="emailInvalid" class="text-danger" style="display: none">*O email não foi encontrado.</small>
+            </div>
+            <div id="password-field" class="field-wrapper input mb-2">
+                <input id="password" name="password" type="password" class="form-control" placeholder="Senha">
+                <small id="passInvalid" class="text-danger" style="display: none">*A senha não coincidem com a da conta.</small>
+            </div>
+            <div class="d-sm-flex justify-content-between">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="toggle-password">
+                    <label class="custom-control-label" for="toggle-password">Exibir Senha</label>
+                </div>
+                <div class="field-wrapper">
+                    <button type="submit" class="btn btn-shox" value="">Acessar</button>
+                </div>
+            </div>
+            <div class="field-wrapper keep-logged-in">
+                <a href="/recuperarconta" class="forgot-pass-link">Esta com problemas <br> para acessar?</a>
             </div>
         </div>
-    </header>
-        <section class="banner_part">
-        <div class="container">
-            <div class="effect2">
-                <svg class="editorial2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-                    <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0
-                        58-18 88-18s
-                        58 18 88 18
-                        58-18 88-18
-                        58 18 88 18
-                        v44h-352z"></path>
-                    </defs>
-                    <g class="parallax12">
-                    <use xlink:href="#gentle-wave" x="50" y="3" fill="#b40431"></use>
-                    </g>
-                        <g class="parallax22">
-                    <use xlink:href="#gentle-wave" x="50" y="0" fill="#610b21"></use>
-                        </g>
-                        <g class="parallax32">
-                    <use xlink:href="#gentle-wave" x="50" y="9" fill="#210b61"></use>
-                    </g>
-                        <g class="parallax42">
-                    <use xlink:href="#gentle-wave" x="50" y="6" fill="#b40431"></use>
-                    </g>
-                </svg>
-            </div>
-            <div class="effect" style="height:680px">
-                <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-                    <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0
-                        58-18 88-18s
-                        58 18 88 18
-                        58-18 88-18
-                        58 18 88 18
-                        v44h-352z"></path>
-                    </defs>
-                     <g class="parallax12">
-                    <use xlink:href="#gentle-wave" x="50" y="3" fill="#b40431"></use>
-                    </g>
-                        <g class="parallax22">
-                    <use xlink:href="#gentle-wave" x="50" y="0" fill="#610b21"></use>
-                        </g>
-                        <g class="parallax32">
-                    <use xlink:href="#gentle-wave" x="50" y="9" fill="#210b61"></use>
-                    </g>
-                        <g class="parallax42">
-                    <use xlink:href="#gentle-wave" x="50" y="6" fill="#b40431"></use>
-                    </g>
-                </svg>
-            </div>
-            <div class="row align-items-center justify-content-between" style="height: 680px;">
-                <div class="col-lg-6" style="z-index: 1 !important;">
-                    <div class="banner_text">
-                        <div class="banner_text_iner animated fadeInRight">
-                            <div class="row">
-                                <h1 class="text-white" style="text-shadow: -2px 2px 1px #aaa;font-size: 38px;">Moedas VIP</h1>
-                            </div>
-                            <div class="row">
-                                <p style="color: #FFFFFF;">Com as Moedas VIP'S você pode está usando para conseguir diversos beneficios oferecidos in-game, como VIP/Sócio, Carros de inventario, portões, acessorios e muito mais.</p>
-                            </div>
+    </form>
+                            <p class="terms-conditions">Brasil PlayShox © 2017 - 2022 All Rights Reserved <br><a class="url_footer" data-toggle="modal" data-target="#termosDeUsoID">Termos de Uso</a>&nbsp; &nbsp;<a class="url_footer" data-toggle="modal" data-target="#privacidadeID">Política de Privacidade</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5" style="z-index: 1 !important; margin-top: 10%;">
-                    <div class="banner_img d-none d-lg-block text-center">
-                        <img class="animated fadeInLeft frontImg" style="width: 80%" src="https://redeplaystart.pages.dev/072018/images/head-man.png" alt="">
-                    </div>
+            </div>
+            <div class="form-image">
+                <div class="l-image">
                 </div>
+                <img src="https://redeplaystart.pages.dev/072018/images/logo1.png" alt="">
             </div>
         </div>
-    </section>
-    <section class="review_part padding_bottom mt-5">
-        <div class="container">
-            <div class="row justify-content-center" id="container">
-                <div class="col-lg-6" id="divTit">
-                    <div class="section_tittle text-center animated fadeInUp">
-                        <h2 id="tit">Pagamento Via PIX</h2>
-                        <p id="dec" style="text-transform: none !important;">Após a plataforma confirmar seu pagamento suas moedas serão setadas automaticamente em até 24 Horas no jogo, Para agilizar sua ativação, Envie o comprovante de Pagamento para algum Fundador.</p>
-                    </div>
-                </div>
-                <div class="col-12 layout-spacing animated fadeInRight" id="recargaCol" style="display: none;">
-                    <div class="row">
-                        <div class="col-12">
-                            <form id="formRecarga" class="text-center m-auto" style="max-width: 400px;">
-                                <input type="hidden" name="_token" value="a4rw9oImHIJDI5SPXedIhvtHTTliKR7pE1lWhdbD">                                <input type="hidden" name="recaptcha" class="recaptcha" value="03AGdBq255M-yz4Qu8cd1sJ9bYi3aYda5znQ-dFZjGBlGAB4gjBim3BGJJ_HLfcSZXXrlWTb4erhigH_W39JJ5-w5_iNdCjWeyEeHT2VYoleRtDIL2eXbgHxXdJp-qPeVVElJ5yaIP_G_ppSY4QeoHPgxZHmPXnIvarWzKrMBlAPIw94rS-qbkSGk6giQLm3qhuj8dxpO5hIyApv5lxDbkEx8rKum5A9Bvh0EVS_PG6DqlEHan7TBcukyq5LqSvc-itV14Vp9e1sp9cb5J1qCxwii317Z-6aL7Qk-A_ezB0gEyvt0T_pRZ7iGUseMSmpGrJGoevm6rn2DQMlIE9ulh6jPMNI4F9P6-meAyYRAmq11eXEiixnr9NnFJYIMmkSGufQDF7wF3VE-Nnao2jwhNv9Xcwuw0eFCoI-g4eu0qh_tb6MgRKObn2Ss6yQNs7khNIYBdHqc8cBETEE2aCZANuJmhmgPqXDBGpu6zaLIzG8uUCWpEGBDICBVUJu9TyoFqpjM8vSH5knKW9JrmATJDoZAlK4ah6g_CXA">
-                                <input type="hidden" name="method" value="PIX" id="metodoID">
-                                <input type="hidden" name="sv_tag" value="1" id="servidorID">
-                                <input type="hidden" name="sv_id" value="750004" id="svID">
-                                <input type="hidden" name="payer" value="Maria Aparecida Santos Souza" id="nomeID">
-                                <input type="hidden" name="email" value="kxzs.ip@gmail.com" id="emailID">
-                                <input type="hidden" name="ddi" value="55" id="ddiID">
-                                <input type="hidden" name="phone" value="31992558970" id="celularID">
-                                <input type="hidden" name="cpf" value="055.896.936-40" id="cpfID">
-                                <input type="hidden" name="cupom" value="" id="cpID">
-                                <div class="form-group">
-                                    <div class="row mb-4">
-                                        <div class="col-lg-3 col-md-6 col-6 my-2"><span class="box-servers m-auto box-servers-active" id="IDsv1" onclick="selSv(1)">#SV1</span></div>
-                                        <div class="col-lg-3 col-md-6 col-6 my-2"><span class="box-servers m-auto" id="IDsv2" onclick="selSv(2)">#SV2</span></div>
-                                        <div class="col-lg-3 col-md-6 col-6 my-2"><span class="box-servers m-auto" id="IDsv3" onclick="selSv(3)">#SV3</span></div>
-                                        <div class="col-lg-3 col-md-6 col-6 my-2"><span class="box-servers m-auto" id="IDsv4" onclick="selSv(4)">#SV4</span></div>
-                                    </div>
-                                    <small class="form-text text-muted">*Escolha com atenção para evitar possiveis transtornos.</small>
-                                </div>
-                                <div class="form-group" id="nickDIV" style="">
-                                    <label for="" class="w-100">Qual seu nickname no servidor?</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="nickID" placeholder="Insira seu Nick In-game" name="sv_nameplayer" maxlength="25" minlength="3" aria-describedby="helpId" style="border: 1px solid rgb(40, 167, 69);" readonly="readonly">
-                                        <div class="input-group-append" id="statusSPAN">
-                                            <span class="input-group-text"><i class="fas fa-check text-success"></i></span>
-                                        </div>
-                                    </div>
-                                    <small id="statusNICK" class="form-text text-danger"></small>
-                                </div>
-                                <div class="form-group" id="moedasDIV" style="">
-                                    <label for="" class="w-100">Quantas moedas vip deseja?</label>
-                                    <input type="text" class="form-control" id="quantiaID" name="amount" min="10000" value="10000" aria-describedby="helpId" placeholder="">
-                                    <small id="helpId" class="form-text text-muted">Recarga minima de 10.000 moedas vip<br>R$ 1,00 equivale a 1.000MV<br>Ex: R$ 23,00 equivale a 23.000MV</small>
-                                </div>
-                                <button type="button" class="btn btn-shox" id="recarregarBTN" style="" onclick="recarregar()">Recarregar</button>
-                                <hr class="my-4">
-                            </form>
-                        </div>
-                        <div class="col-12">
-                            <p class="text-center">Formas de Pagamento<br>
-                            <img src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/mercado-pago.png" width="64" class="img-fluid" title="Mercado Pago">
-                            <img src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/picpay.png" width="64" class="img-fluid" title="PicPay">
-                            <img src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/paypal.png" width="64" class="img-fluid" title="PayPal">
-                            <img src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/pix.png" width="48" class="img-fluid" title="PicPay">
-                            <img src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/boleto.png" width="48" class="img-fluid" title="PicPay">
-                        </p></div>
-                    </div>
-                </div>
-                <div class="col-12 layout-spacing animated fadeInRight" id="payCol" style=""><div class="col-12 layout-spacing animated fadeInRight">
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <h6 class="text-danger">*Válido Permanentemente!</h6>
-                                            <p class="text-center">
-                                                Pague via PIX QRCode
-                                            </p>
-                                            <img src="https://redeplaystart.pages.dev/072018/images/qrcodepix.png" style="width: 250px;">
-                                            <p class="text-center mt-3">
-                                                Pague com PIX Copia e Cola
-                                            </p>
-                                            <div class="input-group mb-3 m-auto" style="max-width: 400px;">
-                                                <input type="text" class="form-control" readonly="true" id="copiaColaPix" value="00020126580014br.gov.bcb.pix0136ab560b51-ea86-43fe-840c-c7be6226c05e27600016BR.COM.PAGSEGURO0136ECF36A76-9D23-4C76-8B7D-5ED100EB1BA55204000053039865802BR5922MARIA APARECIDA SANTOS6005BETIM62290525PAGS000000000220227165486630417F8">
-                                                <div class="input-group-append" onclick="copiarPix()">
-                                                    <span class="input-group-text text-white" style="background: #8FE2DE;"><img src="https://redeplaystart.pages.dev/072018/images/copiarimg.png" style="width: 10px;"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                        </div>
-                                    </div>
-                                </div></div>
-            </div>
-        </div>
-        <img src="https://www.brasilplayshox.com.br/assets_site/img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_2 custom-animation2">
-    </section>
 
-    <!--Dados Conta-->
-    <div class="modal fade" id="contaMODAL" data-backdrop="static" data-keyboard="false" role="dialog" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
+        <div class="modal fade" id="privacidadeID" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 10000;">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
                 <div class="modal-content">
-                    <h3 class="text-center mt-5">Essa é a sua conta?</h3>
-                    <div class="row text-center">
-                        <div class="col-lg-12">
-                            <img id="confSkin" src="http://brasilplayshox.com.br/assets_ucp/img/avatar/160.png" style="width: 100px">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <h2>Política Privacidade</h2> <p>A sua privacidade é importante para nós. É política do Brasil Play Shox respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a href="https://brasilplayshox.com.br/">Brasil Play Shox</a>, e outros sites que possuímos e operamos.</p> <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado. </p> <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis &ZeroWidthSpace;&ZeroWidthSpace;para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p> <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p> <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas <a href="https://politicaprivacidade.com" target="_BLANK">políticas de privacidade</a>. </p> <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</p> <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</p> <h2>Política de Cookies Brasil Play Shox</h2> <h3>O que são cookies?</h3> <p>Como é prática comum em quase todos os sites profissionais, este site usa cookies, que são pequenos arquivos baixados no seu computador, para melhorar sua experiência. Esta página descreve quais informações eles coletam, como as usamos e por que às vezes precisamos armazenar esses cookies. Também compartilharemos como você pode impedir que esses cookies sejam armazenados, no entanto, isso pode fazer o downgrade ou 'quebrar' certos elementos da funcionalidade do site.</p> <h3>Como usamos os cookies?</h3> <p>Utilizamos cookies por vários motivos, detalhados abaixo. Infelizmente, na maioria dos casos, não existem opções padrão do setor para desativar os cookies sem desativar completamente a funcionalidade e os recursos que eles adicionam a este site. É recomendável que você deixe todos os cookies se não tiver certeza se precisa ou não deles, caso sejam usados &ZeroWidthSpace;&ZeroWidthSpace;para fornecer um serviço que você usa.</p> <h3>Desativar cookies</h3> <p>Você pode impedir a configuração de cookies ajustando as configurações do seu navegador (consulte a Ajuda do navegador para saber como fazer isso). Esteja ciente de que a desativação de cookies afetará a funcionalidade deste e de muitos outros sites que você visita. A desativação de cookies geralmente resultará na desativação de determinadas funcionalidades e recursos deste site. Portanto, é recomendável que você não desative os cookies.</p> <h3>Cookies que definimos</h3> <ul> <li> Cookies relacionados à conta<br><br> Se você criar uma conta connosco, usaremos cookies para o gerenciamento do processo de inscrição e administração geral. Esses cookies geralmente serão excluídos quando você sair do sistema, porém, em alguns casos, eles poderão permanecer posteriormente para lembrar as preferências do seu site ao sair.<br><br> </li> <li> Cookies relacionados ao login<br><br> Utilizamos cookies quando você está logado, para que possamos lembrar dessa ação. Isso evita que você precise fazer login sempre que visitar uma nova página. Esses cookies são normalmente removidos ou limpos quando você efetua logout para garantir que você possa acessar apenas a recursos e áreas restritas ao efetuar login.<br><br> </li> <li> Cookies relacionados a boletins por e-mail<br><br> Este site oferece serviços de assinatura de boletim informativo ou e-mail e os cookies podem ser usados &ZeroWidthSpace;&ZeroWidthSpace;para lembrar se você já está registrado e se deve mostrar determinadas notificações válidas apenas para usuários inscritos / não inscritos.<br><br> </li> <li> Pedidos processando cookies relacionados<br><br> Este site oferece facilidades de comércio eletrônico ou pagamento e alguns cookies são essenciais para garantir que seu pedido seja lembrado entre as páginas, para que possamos processá-lo adequadamente.<br><br> </li> <li> Cookies relacionados a pesquisas<br><br> Periodicamente, oferecemos pesquisas e questionários para fornecer informações interessantes, ferramentas úteis ou para entender nossa base de usuários com mais precisão. Essas pesquisas podem usar cookies para lembrar quem já participou numa pesquisa ou para fornecer resultados precisos após a alteração das páginas.<br><br> </li> <li> Cookies relacionados a formulários<br><br> Quando você envia dados por meio de um formulário como os encontrados nas páginas de contacto ou nos formulários de comentários, os cookies podem ser configurados para lembrar os detalhes do usuário para correspondência futura.<br><br> </li> <li> Cookies de preferências do site<br><br> Para proporcionar uma ótima experiência neste site, fornecemos a funcionalidade para definir suas preferências de como esse site é executado quando você o usa. Para lembrar suas preferências, precisamos definir cookies para que essas informações possam ser chamadas sempre que você interagir com uma página for afetada por suas preferências.<br> </li> </ul> <h3>Cookies de Terceiros</h3> <p>Em alguns casos especiais, também usamos cookies fornecidos por terceiros confiáveis. A seção a seguir detalha quais cookies de terceiros você pode encontrar através deste site.</p> <ul> <li> Este site usa o Google Analytics, que é uma das soluções de análise mais difundidas e confiáveis &ZeroWidthSpace;&ZeroWidthSpace;da Web, para nos ajudar a entender como você usa o site e como podemos melhorar sua experiência. Esses cookies podem rastrear itens como quanto tempo você gasta no site e as páginas visitadas, para que possamos continuar produzindo conteúdo atraente. </li> </ul> <p>Para mais informações sobre cookies do Google Analytics, consulte a página oficial do Google Analytics.</p> <ul> <li> As análises de terceiros são usadas para rastrear e medir o uso deste site, para que possamos continuar produzindo conteúdo atrativo. Esses cookies podem rastrear itens como o tempo que você passa no site ou as páginas visitadas, o que nos ajuda a entender como podemos melhorar o site para você.</li> <li> Periodicamente, testamos novos recursos e fazemos alterações subtis na maneira como o site se apresenta. Quando ainda estamos testando novos recursos, esses cookies podem ser usados &ZeroWidthSpace;&ZeroWidthSpace;para garantir que você receba uma experiência consistente enquanto estiver no site, enquanto entendemos quais otimizações os nossos usuários mais apreciam.</li> <li> À medida que vendemos produtos, é importante entendermos as estatísticas sobre quantos visitantes de nosso site realmente compram e, portanto, esse é o tipo de dados que esses cookies rastrearão. Isso é importante para você, pois significa que podemos fazer previsões de negócios com precisão que nos permitem analizar nossos custos de publicidade e produtos para garantir o melhor preço possível.</li> </ul> <h3>Compromisso do Usuário</h3> <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Brasil Play Shox oferece no site e com caráter enunciativo, mas não limitativo:</p> <ul> <li>A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;</li> <li>B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, <a style="color: inherit !important; text-decoration:none !important;" href="https://jogoshoje.io">jogos de hoje</a> ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</li> <li>C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Brasil Play Shox, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</li> </ul> <h3>Mais informações</h3> <p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</p> <p>Esta política é efetiva a partir de <strong>October</strong>/<strong>2021</strong>.</p>
                         </div>
-                        <div class="col-lg-12">
-                            <span class="m-auto">
-                                <b>Nickname:</b> <span id="nickINFO">kxz7_Rico$$</span><br>                          
-                                <b>Level:</b> <span id="lvlINFO">98</span><br>                      
-                                <b>Organização:</b> <span id="orgINFO">Civil</span><br>
-                            </span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="termosDeUsoID" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 10000;">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <h2>1. Termos</h2>            <p>Ao acessar ao site <a href="https://brasilplayshox.com.br/">Brasil Play Shox</a>, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis &ZeroWidthSpace;&ZeroWidthSpace;e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum                desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</p>            <h2>2. Uso de Licença</h2>            <p>É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Brasil Play Shox , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e,                sob esta licença, você não pode:&nbsp;</p>            <ol>            <li>modificar ou copiar os materiais;&nbsp; </li>            <li>usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);&nbsp; </li>            <li>tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Brasil Play Shox;&nbsp; </li>            <li>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou&nbsp; </li>            <li>transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.</li>            </ol>            <p>Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Brasil Play Shox a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais                baixados em sua posse, seja em formato eletrónico ou impresso.</p>            <h2>3. Isenção de responsabilidade</h2>            <ol>            <li>Os materiais no site da Brasil Play Shox são fornecidos 'como estão'. Brasil Play Shox não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização,            adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos. </li>            <li>Além disso, o Brasil Play Shox não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis &ZeroWidthSpace;&ZeroWidthSpace;ou à confiabilidade do uso dos            materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.</li>            </ol>            <h2>4. Limitações</h2>            <p>Em nenhum caso o Brasil Play Shox ou seus fornecedores serão responsáveis &ZeroWidthSpace;&ZeroWidthSpace;por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Brasil Play Shox,                mesmo que Brasil Play Shox ou um representante autorizado da Brasil Play Shox tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade                por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.</p>            <h2>5. Precisão dos materiais</h2>            <p>Os materiais exibidos no site da Brasil Play Shox podem incluir erros técnicos, tipográficos ou fotográficos. Brasil Play Shox não garante que qualquer material em seu site seja preciso, completo ou atual. Brasil Play Shox pode fazer alterações nos materiais contidos em seu                site a qualquer momento, sem aviso prévio. No entanto, Brasil Play Shox não se compromete a atualizar os materiais.</p>            <h2>6. Links</h2>            <p>O Brasil Play Shox não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Brasil Play Shox do site. O uso de qualquer site vinculado é por conta e risco do usuário.</p>            <p></p>            <h3>Modificações</h3>            <p>O Brasil Play Shox pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.</p>            <h3>Lei aplicável</h3>            <p>Estes termos e condições são regidos e interpretados de acordo com as leis do Brasil Play Shox e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
                         </div>
-                    </div>  
-                    <div class="btn-group mt-5" role="group">
-                        <button type="button" class="btn btn-light" onclick="confAccount(0)">Não</button>
-                        <button type="button" class="btn btn-success" onclick="confAccount(1)">Sim</button>
-                    </div>     
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Dados Pessoais-->
-    <div class="modal fade" id="dadosMODAL" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Dados Pessoais</h5>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="row">         
-                        <form class="w-100 px-3">     
-                            <div class="form-row mb-4">
-                                <div class="col">
-                                    <label><span class="text-danger">* </span>Nome Completo</label>
-                                    <input required="" type="text" name="fullname" id="fullnameINPUT" class="form-control" placeholder="Nome Completo" style="border: 1px solid rgb(206, 212, 218);">
-                                </div>
-                                <div class="col">
-                                    <label><span class="text-danger">* </span>Email</label>
-                                    <input required="" type="email" name="email" id="emailINPUT" class="form-control" placeholder="seu@email.com">
-                                </div>
-                            </div>
-                            <div class="form-row mb-4" id="cpfDIV">
-                                <div class="col">
-                                    <label><span class="text-danger">* </span>CPF</label>
-                                    <input required="" type="text" maxlength="14" minlength="14" name="cpf" id="cpfINPUT" class="form-control" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" placeholder="Ex: 123.123.123-12" style="border: 1px solid rgb(206, 212, 218);">
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="gringo">
-                                        <label class="form-check-label" for="gringo">Sou estrangeiro</label>
-                                    </div>
-                                </div>
-                            </div> 
-                            <label><span class="text-danger">* </span>Telefone</label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <select class="form-control" name="ddi" id="DDIINPUT">
-                                        <option value="55" selected="">+55</option>
-                                        <option value="1">+1</option>
-                                        <option value="351">+351</option>
-                                        <option value="258">+258</option>
-                                        <option value="244">+244</option>
-                                    </select>
-                                </div>
-                                <input type="text" class="form-control" id="celINPUT" placeholder="(00) 0 0000-0000" style="border: 1px solid rgb(206, 212, 218);">
-                            </div>                  
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="dadosMODAL(0)">Voltar</button>
-                    <button type="button" class="btn btn-primary" onclick="dadosMODAL(1)">Avançar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Cupom-->
-    <div class="modal fade" id="cupomMODAL" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Cupom</h5>
-                </div>
-                <div class="modal-body px-5 py-4">
-                    <form id="formCupom" class="text-center w-100">
-                        <input type="hidden" name="_token" value="a4rw9oImHIJDI5SPXedIhvtHTTliKR7pE1lWhdbD">                        <div class="form-group">
-                            <label for="">Tem um cupom? Insira abaixo:</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="cupomID" value="" name="cupom" aria-describedby="helpId" placeholder="">
-                                <div class="input-group-append" id="cupomBTN">
-                                    <button type="button" onclick="usarCupom()" class="btn btn-secondary">Aplicar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form> 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="cupomMODAL(0)">Voltar</button>
-                    <button type="button" class="btn btn-primary" onclick="cupomMODAL(1)">Avançar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Confirmação -->
-    <div class="modal fade" id="recarregaMODAL" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Recarregar Moedas</h5>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Você deseja recarregar <b id="moedasID">10.000</b> moedas vip?
-                    <br> o custo é de</p>
-                    <h4 id="valorID">R$ 10,00</h4>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="confMODAL(0)">Voltar</button>
-                    <button type="button" class="btn btn-primary" onclick="confMODAL(1)">Avançar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pagamentos -->
-    <div class="modal fade" id="formMODAL" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" style="display: none;">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Escolha a forma de pagamento</h5>
-                </div>
-                <div class="modal-body text-center pb-0">
-                    <div class="row">
-                        <table class="table mb-0">
-                            <tbody>
-                                    <tr scope="row" id="MPid" class="d-none">
-                                        <td><img id="mercadopago-ID" onclick="selPay(0)" src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/mercado-pago.png" width="32" class="img-fluid rounded img-payment"></td>
-                                        <td style="vertical-align: middle;">Mercado Pago (Saldo, Cartão Credito/Debito, PIX, Boleto, PEC, PayPal) <b class="text-danger">*Indisponível</b></td>
-                                    </tr>
-                                    <tr scope="row" id="PPid">
-                                        <td><img id="picpay-ID" onclick="selPay(1)" src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/picpay.png" width="32" class="img-fluid rounded img-payment"></td>
-                                        <td style="vertical-align: middle;">PicPay (Saldo, Cartão) <b class="text-success">*Disponível</b></td>
-                                    </tr>
-                                    <tr scope="row" id="PPLid" class="d-none">
-                                        <td><img id="paypal-ID" onclick="selPay(2)" src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/paypal.png" width="32" class="img-fluid rounded img-payment"></td>
-                                        <td style="vertical-align: middle;">PayPal (Saldo, Cartão Credito/Debito) <b class="text-danger">*Indisponível</b></td>
-                                    </tr>
-                                    <tr scope="row" id="PIXid">
-                                        <td><img id="pix-ID" onclick="selPay(4)" src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/pix.png" width="32" class="img-fluid rounded img-payment img-payment-active"></td>
-                                        <td style="vertical-align: middle;">PIX (Ativação imediata) <b class="text-success">*Disponível</b></td>
-                                    </tr>
-                                    <tr scope="row" id="BOLid">
-                                        <td><img id="boleto-ID" onclick="selPay(5)" src="https://www.brasilplayshox.com.br/assets_ucp/img/payment_methods/boleto.png" width="32" class="img-fluid rounded img-payment"></td>
-                                        <td style="vertical-align: middle;">Boleto (Ativação em até 72 horas) <b class="text-success">*Disponível</b></td>
-                                    </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="pagamentoMODAL(0)">Voltar</button>
-                    <button type="button" class="btn btn-primary" onclick="pagamentoMODAL(1)">Finalizar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="privacidadeID" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 10000;">
-        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <h2>1. Termos</h2>            <p>Ao acessar ao site <a href="https://redeplaystart.pages.dev/">Rede Play Start</a>, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis &ZeroWidthSpace;&ZeroWidthSpace;e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum                desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</p>            <h2>2. Uso de Licença</h2>            <p>É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Brasil Play Shox , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e,                sob esta licença, você não pode:&nbsp;</p>            <ol>            <li>modificar ou copiar os materiais;&nbsp; </li>            <li>usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);&nbsp; </li>            <li>tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Brasil Play Shox;&nbsp; </li>            <li>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou&nbsp; </li>            <li>transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.</li>            </ol>            <p>Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Brasil Play Shox a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais                baixados em sua posse, seja em formato eletrónico ou impresso.</p>            <h2>3. Isenção de responsabilidade</h2>            <ol>            <li>Os materiais no site da Brasil Play Shox são fornecidos 'como estão'. Brasil Play Shox não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização,            adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos. </li>            <li>Além disso, o Brasil Play Shox não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis &ZeroWidthSpace;&ZeroWidthSpace;ou à confiabilidade do uso dos            materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.</li>            </ol>            <h2>4. Limitações</h2>            <p>Em nenhum caso o Brasil Play Shox ou seus fornecedores serão responsáveis &ZeroWidthSpace;&ZeroWidthSpace;por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Brasil Play Shox,                mesmo que Brasil Play Shox ou um representante autorizado da Brasil Play Shox tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade                por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.</p>            <h2>5. Precisão dos materiais</h2>            <p>Os materiais exibidos no site da Brasil Play Shox podem incluir erros técnicos, tipográficos ou fotográficos. Brasil Play Shox não garante que qualquer material em seu site seja preciso, completo ou atual. Brasil Play Shox pode fazer alterações nos materiais contidos em seu                site a qualquer momento, sem aviso prévio. No entanto, Brasil Play Shox não se compromete a atualizar os materiais.</p>            <h2>6. Links</h2>            <p>O Brasil Play Shox não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Brasil Play Shox do site. O uso de qualquer site vinculado é por conta e risco do usuário.</p>            <p></p>            <h3>Modificações</h3>            <p>O Brasil Play Shox pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.</p>            <h3>Lei aplicável</h3>            <p>Estes termos e condições são regidos e interpretados de acordo com as leis do Brasil Play Shox e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="termosDeUsoID" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 10000;">
-        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <h2>1. Termos</h2>            <p>Ao acessar ao site <a href="https://redeplaystart.pages.dev/">Rede Play Start</a>, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis &ZeroWidthSpace;&ZeroWidthSpace;e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum                desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</p>            <h2>2. Uso de Licença</h2>            <p>É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Brasil Play Shox , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e,                sob esta licença, você não pode:&nbsp;</p>            <ol>            <li>modificar ou copiar os materiais;&nbsp; </li>            <li>usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);&nbsp; </li>            <li>tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Brasil Play Shox;&nbsp; </li>            <li>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou&nbsp; </li>            <li>transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.</li>            </ol>            <p>Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Brasil Play Shox a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais                baixados em sua posse, seja em formato eletrónico ou impresso.</p>            <h2>3. Isenção de responsabilidade</h2>            <ol>            <li>Os materiais no site da Brasil Play Shox são fornecidos 'como estão'. Brasil Play Shox não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização,            adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos. </li>            <li>Além disso, o Brasil Play Shox não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis &ZeroWidthSpace;&ZeroWidthSpace;ou à confiabilidade do uso dos            materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.</li>            </ol>            <h2>4. Limitações</h2>            <p>Em nenhum caso o Brasil Play Shox ou seus fornecedores serão responsáveis &ZeroWidthSpace;&ZeroWidthSpace;por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Brasil Play Shox,                mesmo que Brasil Play Shox ou um representante autorizado da Brasil Play Shox tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade                por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.</p>            <h2>5. Precisão dos materiais</h2>            <p>Os materiais exibidos no site da Brasil Play Shox podem incluir erros técnicos, tipográficos ou fotográficos. Brasil Play Shox não garante que qualquer material em seu site seja preciso, completo ou atual. Brasil Play Shox pode fazer alterações nos materiais contidos em seu                site a qualquer momento, sem aviso prévio. No entanto, Brasil Play Shox não se compromete a atualizar os materiais.</p>            <h2>6. Links</h2>            <p>O Brasil Play Shox não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Brasil Play Shox do site. O uso de qualquer site vinculado é por conta e risco do usuário.</p>            <p></p>            <h3>Modificações</h3>            <p>O Brasil Play Shox pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.</p>            <h3>Lei aplicável</h3>            <p>Estes termos e condições são regidos e interpretados de acordo com as leis do Brasil Play Shox e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-white">
-        <div class="text-white footer-urls text-center" style="background-color: #FF0000;"><a class="url_footer" data-toggle="modal" data-target="#termosDeUsoID">Termos de Uso</a>&nbsp; &nbsp;<a class="url_footer" data-toggle="modal" data-target="#privacidadeID">Política de Privacidade</a> - Copyright © 2022 &nbsp;Rede Play Start</div>
-    </div>
-    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/PdoyIVkd8v16xl_NMp3H0N1Y/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-Qs9Tw6FAIN5Ac/MPOW4X1+51XOpcmqS7rJJghOA0cwxTtS4yVb4Z7gl1Xgf07wQy"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_site/js/jquery-1.12.1.min.js"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_site/js/popper.min.js"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_site/js/bootstrap.min.js"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_site/js/custom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_site/js/app.js"></script>
-        <script src="https://www.brasilplayshox.com.br/assets_ucp/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_ucp/js/convertCoin.js"></script>
-    <script src="https://www.brasilplayshox.com.br/assets_all/jquery.mask.min.js"></script>    
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X"></script>
-    <script id="paypal-sc" src="https://www.paypal.com/sdk/js?client-id=ASEivpOat_iYcBSRmTriAMth5IJA8TvGRG1gCKkWHY4e8lJz_kG2LvGDX0gXnhl_4BX6aowhvWXAWHZq&amp;currency=BRL" data-uid-auto="uid_ldrfqkrdjrrrkuaisejljfrdcclpzf"></script>
-    <script>               
-        var gringo,ddi,accConfirmed=!1,cupomPer=0,pID=null,ref=null,timer1=null;
-        //CSRF Token
-        $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});   
-
-        //Recaptcha
-        function getRecaptcha(){grecaptcha.ready(function(){grecaptcha.execute("6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X",{action:"homepage"}).then(function(c){c&&$(".recaptcha").val(c)})})}
-
-        //Estrangeiro
-        $("#gringo").change(function(){this.checked?($("#cpfINPUT").attr("readonly",!0),$("#cpfINPUT").val(""),$("#cpfINPUT").css("border","1px solid #ced4da"),$("#PPid").hide(),$("#BOLid").hide(),$("#PIXid").hide(),gringo=!0):($("#PPid").show(),$("#BOLid").show(),$("#PIXid").show(),$("#cpfINPUT").attr("readonly",!1),$("#cpfINPUT").css("border","1px solid #ced4da"),gringo=!1)});
-        
-        //DDI
-        $("#DDIINPUT").change(function(){"+55"==$("#DDIINPUT").val()?($("#PPid").show(),$("#BOLid").show(),$("#PIXid").show()):($("#PPid").hide(),$("#BOLid").hide(),$("#PIXid").hide())});
-
-        //Player
-        $("#statusSPAN").click(function(){if(!accConfirmed){$("header").css("position","absolute");let s={_token:"a4rw9oImHIJDI5SPXedIhvtHTTliKR7pE1lWhdbD",sv:$("#servidorID").val(),nick:$("#nickID").val(),recaptcha:$(".recaptcha").val()};Swal.fire({icon:"warning",title:" Aguarde...",text:"Estamos procurando sua conta, por favor aguarde!",allowOutsideClick:!1,showCancelButton:!1,showConfirmButton:!1,onOpen:function(){$(".swal2-confirm").css("display","none")}}),$.ajax({type:"POST",url:"/api/players/list",data:s,success:function(s){s=JSON.parse(s),swal.close(),$("#nickID").css("border","1px solid #28a745"),getRecaptcha(),$("#confSkin").attr("src","http://brasilplayshox.com.br/assets_ucp/img/avatar/"+s.sv_skin+".png"),$("#nickINFO").text(s.sv_name),$("#lvlINFO").text(s.sv_level),$("#contaMODAL").modal("show"),$("#orgINFO").text(s.sv_org),$("#svID").val(s.sv_id)},error:function(s){swal.close(),$("#nickID").css("border","1px solid #c00"),$("#statusNICK").text("*Conta não encontrada!"),getRecaptcha()}})}});
-
-        //Selecionar Forma de Pagamento
-        function selPay(a){0===a?($("#mercadopago-ID").addClass("img-payment-active"),$("#paypal-ID").removeClass("img-payment-active"),$("#picpay-ID").removeClass("img-payment-active"),$("#pix-ID").removeClass("img-payment-active"),$("#metodoID").val("MercadoPago")):1===a?($("#mercadopago-ID").removeClass("img-payment-active"),$("#paypal-ID").removeClass("img-payment-active"),$("#picpay-ID").addClass("img-payment-active"),$("#pix-ID").removeClass("img-payment-active"),$("#boleto-ID").removeClass("img-payment-active"),$("#metodoID").val("PicPay")):2===a?($("#mercadopago-ID").removeClass("img-payment-active"),$("#paypal-ID").addClass("img-payment-active"),$("#picpay-ID").removeClass("img-payment-active"),$("#pix-ID").removeClass("img-payment-active"),$("#boleto-ID").removeClass("img-payment-active"),$("#metodoID").val("PayPal")):4===a?($("#mercadopago-ID").removeClass("img-payment-active"),$("#paypal-ID").removeClass("img-payment-active"),$("#picpay-ID").removeClass("img-payment-active"),$("#pix-ID").addClass("img-payment-active"),$("#boleto-ID").removeClass("img-payment-active"),$("#metodoID").val("PIX"),console.log($("#metodoID").val())):5===a&&($("#mercadopago-ID").removeClass("img-payment-active"),$("#paypal-ID").removeClass("img-payment-active"),$("#picpay-ID").removeClass("img-payment-active"),$("#pix-ID").removeClass("img-payment-active"),$("#boleto-ID").addClass("img-payment-active"),$("#metodoID").val("Boleto"))}
-
-        //Selecionar Servidor
-        function selSv(s){if(!accConfirmed)switch(s){case 1:$("#IDsv1").addClass("box-servers-active"),$("#IDsv2").removeClass("box-servers-active"),$("#IDsv3").removeClass("box-servers-active"),$("#IDsv4").removeClass("box-servers-active"),$("#servidorID").val(1),$("#nickDIV").show(500);break;case 2:$("#IDsv1").removeClass("box-servers-active"),$("#IDsv2").addClass("box-servers-active"),$("#IDsv3").removeClass("box-servers-active"),$("#IDsv4").removeClass("box-servers-active"),$("#servidorID").val(2),$("#nickDIV").show(500);break;case 3:$("#IDsv1").removeClass("box-servers-active"),$("#IDsv2").removeClass("box-servers-active"),$("#IDsv3").addClass("box-servers-active"),$("#IDsv4").removeClass("box-servers-active"),$("#servidorID").val(3),$("#nickDIV").show(500);break;case 4:$("#IDsv1").removeClass("box-servers-active"),$("#IDsv2").removeClass("box-servers-active"),$("#IDsv3").removeClass("box-servers-active"),$("#IDsv4").addClass("box-servers-active"),$("#servidorID").val(4),$("#nickDIV").show(500)}}
-
-        //Confirmar Conta
-        function confAccount(s){$("header").css("position","absolute"),1==s?($("#nickID").attr("readonly","true"),$("#contaMODAL").modal("hide"),$("#moedasDIV").show(500),$("#recarregarBTN").show(500),$("#statusSPAN>span").html('<i class="fas fa-check text-success"></i>'),$("#statusNICK").text(""),accConfirmed=!0,$("header").css("position","")):0==s&&($("#nickID").val(""),$("#contaMODAL").modal("hide"),$("#statusNICK").text(""),$("#nickID").css("border","1px solid #ced4da"),$("header").css("position",""))}
-        
-        //Clicar em Recarregar
-        function recarregar(){if($("#quantiaID").val()<=9999)return Swal.fire({title:"ERROR!",text:"Quantia de Moedas VIP Inválida",icon:"error",showCancelButton:!1,confirmButtonColor:"#cc0000",cancelButtonColor:"#d33",confirmButtonText:"Okay!"}),void $("#quantiaID").css("border","1px solid #c00");$("#quantiaID").css("border",""),$("#dadosMODAL").modal("show"),$("header").css("position","absolute")}
-
-        //Modal de Dados
-        function dadosMODAL(l){if(0==l)$("#dadosMODAL").modal("hide");else{if(/^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i.test($("#emailINPUT").val())||($("#emailINPUT").css("border","1px solid #c00")(""==$("#emailINPUT").val())?$("#emailINPUT").css("border","1px solid #c00"):$("#emailINPUT").css("border","1px solid #ced4da")),""==$("#fullnameINPUT").val()?$("#fullnameINPUT").css("border","1px solid #c00"):$("#fullnameINPUT").css("border","1px solid #ced4da"),""==$("#celINPUT").val()?$("#celINPUT").css("border","1px solid #c00"):$("#celINPUT").css("border","1px solid #ced4da"),!gringo){if(0==valCPF())return Swal.fire({title:"ERROR!",text:"CPF Inválido",icon:"error",showCancelButton:!1,confirmButtonColor:"#cc0000",cancelButtonColor:"#d33",confirmButtonText:"Okay!"}),void $("#cpfINPUT").css("border","1px solid #c00");$("#cpfINPUT").css("border","1px solid #ced4da")}if(""==$("#emailINPUT").val()||""==$("#celINPUT").val()||""==$("#fullnameINPUT").val())return;$("#celularID").val($("#celINPUT").val()),$("#nomeID").val($("#fullnameINPUT").val()),$("#emailID").val($("#emailINPUT").val()),$("#ddiID").val($("#DDIINPUT").val()),gringo?$("#cpfID").val("estrangeiro"):$("#cpfID").val($("#cpfINPUT").val()),$("#dadosMODAL").modal("hide"),$("#cupomMODAL").modal("show")}}
-
-        //Modal de Cupom
-        function cupomMODAL(a){if(0==a)$("#dadosMODAL").modal("show"),$("#cupomMODAL").modal("hide");else{let a=null;a=0==cupomPer?$("#quantiaID").val():$("#quantiaID").val()*(1+cupomPer/100);let o=.001*$("#quantiaID").val();$("#cupomMODAL").modal("hide"),$("#moedasID").text(number_format(a,0,".",".")),$("#valorID").text("R$ "+number_format(o,2,",",".")),$("#recarregaMODAL").modal("show")}}
-
-        //Modal de Confirmação
-        function confMODAL(o){0==o?($("#recarregaMODAL").modal("hide"),$("#cupomMODAL").modal("show")):($("#recarregaMODAL").modal("hide"),$("#formMODAL").modal("show"))}
-
-        //Modal de Formad e Pagamento
-        function pagamentoMODAL(o){0==o?($("#formMODAL").modal("hide"),$("#recarregaMODAL").modal("show")):($("#formMODAL").modal("hide"),$("#servidorID").val(),gerarPedido())}
-
-        //Gerar Pedido
-        function gerarPedido()
-        {
-            if($('#metodoID').val() != null && $('#servidorID').val() != null && $('#nickID').val() != '' && $('#quantiaID').val() >= 10000)
-            {
-                
-                Swal.fire({
-                    icon: 'warning',
-                    title: ' Aguarde...',
-                    text: 'Estamos gerando seu pedido, por favor aguarde!',
-                    allowOutsideClick: false,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    onOpen: function() {
-                        $('.swal2-confirm').css('display', 'none')
-                    }
-                })
-
-                let formData = new FormData($("#formRecarga").get(0));
-                $.ajax({
-                    type: 'POST',
-                    url: '/api/pay',
-                    data : formData,
-                    dataType: 'json',
-                    contentType : false,
-                    processData : false,
-                    success: function(data)
-                    {
-                        swal.close();
-                        //OK
-                        if($('#metodoID').val() == 'PicPay'){
-                            let linha = 
-                                `<div class="col-12 layout-spacing animated fadeInRight">
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <h6 class="text-danger">*Válido por apenas 3 horas!</h6>
-                                        <p class="text-center">
-                                        Pague via QRCode PicPay</p>
-                                        <img src="${data.qr_code}" style="
-                                            width: 250px;
-                                        "><p class="text-center">
-                                        Pague no PicPay</p>
-                                        <a target="_blank" href="${data.paymentUrl}">Clique Aqui</a>
-                                        </div>
-                                        <div class="col-12">
-                                        </div>
-                                    </div>                                    
-                                </div>`;
-                            $('#tit').html(`Pedido ${data.ref} gerado!`)
-                            $('#dec').html('Após a plataforma confirmar seu pagamento suas moedas serão setas automaticamente em até 15 minutos no jogo, o envio de comprovante para um fundador não agilizará sua ativação.');
-                            $('#recargaCol').hide();
-                            $('#payCol').html('');
-                            $('#payCol').append(linha);
-                            $('#payCol').show(500);
-                        }
-                        else if($('#metodoID').val() == 'PayPal')
-                        {    
-                            const tID = data.id;
-                            const tPrice = data.price;
-                            $('#paypal-sc').attr('data-order-id', data.ref);
-                            paypal.Buttons({
-                                createOrder: function(data, actions) {
-                                    return actions.order.create({
-                                    purchase_units: [{
-                                        amount: {
-                                            value: tPrice
-                                        }
-                                    }]
-                                    });
-                                },
-                                onApprove: function(data, actions) {
-                                    return actions.order.capture().then(function(details) {
-                                        data = {
-                                            '_token': $('meta[name="csrf-token"]').attr('content'),
-                                            'order_id': tID,
-                                            'payment_id': details.id
-                                        }
-                                        $.ajax({
-                                            type: "POST",
-                                            url: "/api/paypal/order",
-                                            data: data,
-                                            success: function(data) {
-                                                attStatus();
-                                            },
-                                            error: function(data) {
-                                                Swal.fire({
-                                                    title: 'ERROR!',
-                                                    text: data.responseText,
-                                                    icon: 'error',
-                                                    showCancelButton: false,
-                                                    confirmButtonColor: '#F30A0A',
-                                                    cancelButtonColor: '#d33',
-                                                    confirmButtonText: 'Okay!'
-                                                });
-                                            }
-                                        });
-                                    });
-                                }
-                            }).render('#paypal-button');
-                            $('#tit').html(`Pedido ${data.ref} gerado!`)
-                            $('#dec').html('Após a plataforma confirmar seu pagamento suas moedas serão setas automaticamente em até 15 minutos no jogo, o envio de comprovante para um fundador não agilizará sua ativação.');
-                            $('#recargaCol').hide();
-                            $('#payCol').show(500);
-                        }
-                        else if($('#metodoID').val() == 'MercadoPago')
-                        {
-                            let linha =
-                                `<div class="col-12 layout-spacing animated fadeInRight">
-                                    <div class="row">
-                                        <div class="col-12 text-center"><p class="text-center mb-3">
-                                        Aperte o botão abaixo para ser acessar a página de pagamento</p>
-                                        <div class="m-auto btn-pay"></div>
-                                        </div>
-                                    </div>
-                                </div>`;
-                            $('#tit').html(`Pedido ${data.ref} gerado!`)
-                            $('#dec').html('Após a plataforma confirmar seu pagamento suas moedas serão setas automaticamente em até 15 minutos no jogo, o envio de comprovante para um fundador não agilizará sua ativação.');
-                            $('#recargaCol').hide();
-                            $('#payCol').html('');
-                            $('#payCol').append(linha);
-                            $('#payCol').show(500);
-
-                            const mp = new MercadoPago('APP_USR-fd130c04-076b-430b-9fa5-5e62989f6556', {
-                                locale: 'pt-BR'
-                            });
-                            
-                            mp.checkout({
-                                preference: {
-                                    id: data.preference
-                                },
-                                render: {
-                                        container: '.btn-pay', // Indica onde o botão de pagamento será exibido
-                                        label: 'Efetuar Pagamento', // Muda o texto do botão de pagamento (opcional)
-                                }
-                            });
-                        }
-                        else if($('#metodoID').val() == 'PIX')
-                        {
-                            let linha = 
-                                `<div class="col-12 layout-spacing animated fadeInRight">
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <h6 class="text-danger">*Válido por apenas 3 horas!</h6>
-                                            <p class="text-center">
-                                                Pague via PIX QRCode
-                                            </p>
-                                            <img src="${data.qrcode}" style="width: 250px;">
-                                            <p class="text-center mt-3">
-                                                Pague com PIX Copia e Cola
-                                            </p>
-                                            <div class="input-group mb-3 m-auto" style="max-width: 400px;">
-                                                <input type="text" class="form-control" readonly="true" id="copiaColaPix" value="${data.emv}">
-                                                <div class="input-group-append" onclick="copiarPix()">
-                                                    <span class="input-group-text text-white" style="background: #F30A0A;"><i class="fal fa-copy"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                        </div>
-                                    </div>
-                                </div>`;
-                            $('#tit').html(`Pedido ${data.ref} gerado!`)
-                            $('#dec').html('Após a plataforma confirmar seu pagamento suas moedas serão setas automaticamente em até 15 minutos no jogo, o envio de comprovante para um fundador não agilizará sua ativação.');
-                            $('#recargaCol').hide();
-                            $('#payCol').html('');
-                            $('#payCol').append(linha);
-                            $('#payCol').show(500);
-                        }
-                        else if($('#metodoID').val() == 'Boleto')
-                        {
-                            let linha = 
-                                `<div class="col-12 layout-spacing animated fadeInRight">
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <p class="text-center mt-3">
-                                                Pague com Boleto Linha Digitavel
-                                            </p>
-                                            <div class="input-group mb-3 m-auto" style="max-width: 400px;">
-                                                <input type="text" class="form-control" readonly="true" id="copiaColaBoleto" value="${data.bar_code}">
-                                                <div class="input-group-append" onclick="copiarBoleto()">
-                                                    <span class="input-group-text text-white" style="background: #F30A0A;"><i class="fal fa-copy"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                        </div>
-                                    </div>
-                                </div>`;
-                            $('#tit').html(`Pedido ${data.ref} gerado!`)
-                            $('#dec').html('Após a plataforma confirmar seu pagamento suas moedas serão setas automaticamente em até 15 minutos no jogo, o envio de comprovante para um fundador não agilizará sua ativação.');
-                            $('#recargaCol').hide();
-                            $('#payCol').html('');
-                            $('#payCol').append(linha);
-                            $('#payCol').show(500);
-                        }
-                        
-                        pID = data.id;
-                        ref = data.ref;
-                        timer1 = setInterval(() => {
-                            attStatus(pID, ref);
-                        }, 10000);
-                    },
-                    error: function(data)
-                    {
-                        Swal.fire({
-                            title: 'ERROR!',
-                            text: data.responseText,
-                            icon: 'error',
-                            showCancelButton: false,
-                            confirmButtonColor: '#F30A0A',
-                            cancelButtonColor: '#d33',
-                            confirmButtonText: 'Okay!'
-                        })
-                        getRecaptcha();
-                        $('header').css('position', '');
+        <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/PdoyIVkd8v16xl_NMp3H0N1Y/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-Qs9Tw6FAIN5Ac/MPOW4X1+51XOpcmqS7rJJghOA0cwxTtS4yVb4Z7gl1Xgf07wQy"></script><script src="https://www.brasilplayshox.com.br/assets_ucp/js/libs/jquery-3.1.1.min.js"></script>
+        <script src="https://www.brasilplayshox.com.br/assets_ucp/bootstrap/js/popper.min.js"></script>
+        <script src="https://www.brasilplayshox.com.br/assets_ucp/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://www.brasilplayshox.com.br/assets_ucp/pages/js/auth.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute("6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X", {action: 'homepage'}).then(function(token) {
+                    if(token) {
+                        $(".recaptcha").val(token);
                     }
                 });
+            });
+        </script>
+            <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+        });
+        var passView = false;
+        $('#toggle-password').click(function () {
+            if(passView == false)
+            {
+                passView = true;
+                $('#password').attr('type', 'text');
             }
             else
             {
-                Swal.fire({
-                    title: 'Ops!',
-                    text: "ERROR - Tente novamente!",
-                    icon: 'error',
-                    showCancelButton: false,        
-                   confirmButtonColor: '#F30A0A',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Okay!'
-                });
-                getRecaptcha();
-                $('header').css('position', '');
+                passView = false;
+                $('#password').attr('type', 'password');
             }
-        }
+        });
 
-        //Validador de CPF
-        function valCPF(){let r=$("#cpfINPUT").val();var e,n;if(e=0,"00000000000"==(r=(r=(r=r.replace(".","")).replace(".","")).replace("-","")))return!1;for(i=1;i<=9;i++)e+=parseInt(r.substring(i-1,i))*(11-i);if(10!=(n=10*e%11)&&11!=n||(n=0),n!=parseInt(r.substring(9,10)))return!1;for(e=0,i=1;i<=10;i++)e+=parseInt(r.substring(i-1,i))*(12-i);return 10!=(n=10*e%11)&&11!=n||(n=0),n==parseInt(r.substring(10,11))}
-                
-        //Copiar PixCopiaCola
-        function copiarPix(){$("#copiaColaPix").select(),document.execCommand("copy"),Swal.fire({title:"Copiado com sucesso!",icon:"success",showCancelButton:!1,confirmButtonColor:"#F30A0A",cancelButtonColor:"#d33",confirmButtonText:"Okay!"})}
+        $('#loginForm').on('submit', function (e){
+            e.preventDefault();
+            $('#passInvalid').hide();
+            $('#userInvalid').hide();
 
-        //Copiar Boleto
-        function copiarBoleto(){$("#copiaColaBoleto").select(),document.execCommand("copy"),Swal.fire({title:"Copiado com sucesso!",icon:"success",showCancelButton:!1,confirmButtonColor:"#F30A0A",cancelButtonColor:"#d33",confirmButtonText:"Okay!"})}
-
-        //Recuperar Status
-        function attStatus(a,t){let e={_token:$('meta[name="csrf-token"]').attr("content"),id:a};$.ajax({type:"POST",url:"/api/pay/status",data:e,dataType:"json",success:function(a){"Aprovado"==a.text?($("#container").html(`<div class="col-lg-6"><div class="section_tittle text-center animated fadeInUp"><i class="fal fa-check-circle text-success" style="font-size: 90px;margin-bottom: 20px;"></i><h3>Pedido ${t} foi aprovado!</h3><p style="text-transform: none !important;">Seu pedido foi aprovado pela plataforma e ativado em nosso sistema, agradecemos sua confiança em nosso servidor e estamos trabalhando diaramente para trazer mais diversão a todos! <br> Use /lojavip para receber suas moedas vip.</p></div></div><div class="col-12 layout-spacing animated fadeInRight"><div class="row"><div class="col-12 text-center"><p class="text-center"><a targer="_blank" href="/comprar-mv" class="btn btn-shox mt-2">Comprar Novamente</a></div></div></div>`),clearInterval(timer1)):"Cancelado"==a.text&&($("#container").html(`<div class="col-lg-6"><div class="section_tittle text-center animated fadeInUp"><i class="fal fa-times-circle text-danger" style="font-size: 90px;margin-bottom: 20px;"></i><h3>Pedido ${t} foi recusado!</h3><p style="text-transform: none !important;">Seu pedido foi recusado pela plataforma, e cancelado em nosso sistema.</p></div></div><div class="col-12 layout-spacing animated fadeInRight"><div class="row"><div class="col-12 text-center"><p class="text-center"><a targer="_blank" href="/comprar-mv" class="btn btn-shox mt-2">Comprar Novamente</a></div></div></div>`),clearInterval(timer1))}})}
-        
-        //Cupom
-        function usarCupom()
-        {
-            let dados = {
-                _token: $('meta[name="csrf-token"]').attr('content'),
-                recaptcha: $('.recaptcha').val(),
-                cupom: $('#cupomID').val(),
-                idp: $('#svID').val(),
-                sv: $('#servidorID').val()
-            };
+            Swal.fire({
+                icon: 'warning',
+                title: ' Aguarde...',
+                text: 'Estamos validando os dados, um momento!',
+                allowOutsideClick: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+                onOpen: function() {
+                    $('.swal2-confirm').css('display', 'none')
+                }
+            })
 
             $.ajax({
-                type: "POST",
-                url: "/api/pay/cupom",
-                data: dados,
-                dataType: "json",
+                type: 'post',
+                url: '/api/auth/signin',
+                data: $('#loginForm').serialize(),                
                 success: function (data) {
-                    cupomPer = data.percentual;
-                    $('#cpID').val($('#cupomID').val());
-                    $('#cupomBTN').remove();
-                    $('#cupomID').attr('disabled', true);
-                    $('#cupomAlert').removeClass('text-danger').addClass('text-success');
-                    $('#cupomAlert').text(data.text);
-                    getRecaptcha();
+                    location.reload();
                 },
-                error: function(data)
-                {
+                error: function (data) {
                     Swal.fire({
-                        text: data.responseText,
                         icon: 'error',
-                        showCancelButton: false,
-                        confirmButtonColor: '#cc0000 !important',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Okay!'
-                    });
-                    $('#cupomAlert').removeClass('text-success').addClass('text-danger');
-                    $('#cupomAlert').text(data.responseText);
-                    getRecaptcha();
+                        title: 'Oops...',
+                        text: data.responseText
+                    }) 
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute("6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X", {action: 'homepage'}).then(function(token) {
+                            if(token) {
+                                $(".recaptcha").val(token);
+                            }
+                        });
+                    });                   
                 }
             });
-        }
-    
-        //OK
-        $(document).ready(function(){$('#cpfINPUT').mask('000.000.000-00', {reverse: true});selPay(4);getRecaptcha()});
+        });
     </script>
+    
 
-
-<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X&amp;co=aHR0cHM6Ly93d3cuYnJhc2lscGxheXNob3guY29tLmJyOjQ0Mw..&amp;hl=pt-BR&amp;v=PdoyIVkd8v16xl_NMp3H0N1Y&amp;size=invisible&amp;cb=ma5ofuiy2ema" width="256" height="60" role="presentation" name="a-i6ky4nmb53ay" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Leuw5UcAAAAAH6cV3WhSYUFR47mVsVkDHNW495X&amp;co=aHR0cHM6Ly93d3cuYnJhc2lscGxheXNob3guY29tLmJyOjQ0Mw..&amp;hl=pt-BR&amp;v=PdoyIVkd8v16xl_NMp3H0N1Y&amp;size=invisible&amp;cb=yea3jighoi7o" width="256" height="60" role="presentation" name="a-yvvlfs3jadei" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>
