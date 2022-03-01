@@ -1,0 +1,15 @@
+{
+ "iss": "https://accounts.google.com",
+ "sub": "110169484474386276334",
+ "azp": "1008719970978-hb24n2dstb40o45d4feuo2ukqmcc6381.apps.googleusercontent.com",
+ "aud": "1008719970978-hb24n2dstb40o45d4feuo2ukqmcc6381.apps.googleusercontent.com",
+ "iat": "1433978353",
+ "exp": "1433981953",
+ "email": "emaildousuario@gmail.com",
+ "email_verified": "true",
+ "name" : "Nome do usuário",
+ "picture": "https://lh4.googleusercontent.com/-kYgzyAWpZzJ/ABCDEFGHI/AAAJKLMNOP/tIXL9Ir44LE/s99-c/photo.jpg",
+ "given_name": "Nome",
+ "family_name": "do Usuário",
+ "locale": "pt-br"
+}
