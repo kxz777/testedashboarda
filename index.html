@@ -1,59 +1,29 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Google login</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-
-  <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-
-  <script src="main.js"></script>
-
+  <meta name="google-signin-client_id" content="784898876187-pfhusess02f4aof9ctejglifmbilu102.apps.googleusercontent.com">
 </head>
-
 <body>
+  <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
 
-  <div class="container">
-
-    <h1>Cole em suas URL permitidas:</h1>
-
-    <ul>
-
-      <li>http://pool-coal-moose.glitch.me/</li>
-
-    </ul>
-
-    <hr>
-
-    <div id="buttonDiv"></div>
-
-    <p id="fullName"></p>
-
-    <p id="sub"></p>
-
-    <p id="given_name"></p>
-
-    <p id="family_name"></p>
-
-    <p id="email"></p>
-
-    <p id="verifiedEmail"></p>
-
-    <img id="picture" />
-
-  </div>
-
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
-
 </html>
