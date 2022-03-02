@@ -1,103 +1,153 @@
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    var user = firebase.auth().currentUser;
-    if (user != null) {
-    	var email_id = user.email;
-    	var email_verified = user.emailVerified;
-    	if (email_verified != true) {
-         document.getElementById("user-div").style.display = "none";
-         document.getElementById("login-div").style.display = "none";
-         document.getElementById("registration-div").style.display = "none";
-         document.getElementById("send-verification-div").style.display = "block";
-         document.getElementById("user_para").innerHTML = "Email : " + email_id;
-    	 send_verification();
-    	}else{
-         
-         document.getElementById("user-div").style.display = "block";
-         document.getElementById("login-div").style.display = "none";
-         document.getElementById("registration-div").style.display = "none";
-         document.getElementById("send-verification-div").style.display = "none";
-         document.getElementById("user_email_show").innerHTML = "Welcome user : " + email_id;
-         /*document.getElementById("user_email_show").innerHTML = "Welcome user : " + email_id +
-    	 "</br> Verified : " + email_verified;*/
-    	}
-    	
+const express = require("express");
+const mongoose = require("mongoose");
+const path = require("path");
+const app = express();
+
+var session = require("express-session");
+
+const Posts = require("./Posts.js");
+
+app.use(express.json());
+app.use(
+    express.urlencoded({
+        extended: true,
+    })
+);
+
+app.use(session({ secret: "keyboard cat", cookie: { maxAge: 60000 } }));
+
+mongoose
+    .connect(
+        "mongodb+srv://root:Ez10xL59glHFmNcK@cluster0.7fzjz.mongodb.net/posts?retryWrites=true&w=majority",
+        { useNewUrlParser: true, useUnifiedTopology: true }
+    )
+    .then(function () {
+        console.log("successfully connected!!!");
+    })
+    .catch(function (err) {
+        console.log(err.message);
+    });
+
+app.engine("html", require("ejs").renderFile);
+app.set("view engine", "html");
+app.use("/public", express.static(path.join(__dirname, "public")));
+app.set("views", path.join(__dirname, "/pages"));
+
+app.get("/", (req, res) => {
+    if (req.query.busca == null) {
+        Posts.find({})
+            .sort({ _id: -1 })
+            .exec(function (err, posts) {
+                //console.log(posts[0]);
+                posts = posts.map(function (val) {
+                    return {
+                        titulo: val.titulo,
+                        conteudo: val.conteudo,
+                        miniDescricao: val.conteudo.substr(0, 100),
+                        image: val.image,
+                        slug: val.slug,
+                        categoria: val.categoria,
+                    };
+                });
+                res.render("home", { posts: posts});
+            });
+    } else {
+        Posts.find(
+            { titulo: { $regex: req.query.busca, $options: "i" } },
+            function (err, posts) {
+                //console.log(posts);
+
+                res.render("busca", { posts: posts, contagem: posts.length });
+            }
+        );
     }
-  } else {
-    // No user is signed in.
-    document.getElementById("user-div").style.display ="none";
-    document.getElementById("login-div").style.display = "block";
-    document.getElementById("registration-div").style.display = "none";
-    document.getElementById("send-verification-div").style.display = "none";
-  }
+}); //render home
+app.get("/:slug", (req, res) => {
+    // res.send(req.params.slug);
+    Posts.findOneAndUpdate(
+        { slug: req.params.slug },
+        { $inc: { views: 1 } },
+        { new: true },
+        function (err, resposta) {
+            //console.log(resposta)
+            postsTop = postsTop.map(function (val) {
+                return {
+                    titulo: val.titulo,
+                    conteudo: val.conteudo,
+                    miniDescricao: val.conteudo.substr(0, 100),
+                    image: val.image,
+                    slug: val.slug,
+                    categoria: val.categoria,
+                };
+            });
+            res.render("single", { noticia: resposta });
+        }
+    );
 });
 
+var usuarios = [
+    {
+        login: "guilherme",
+        password: "3497",
+    },
+];
 
-function login(){
-	var userEmail = document.getElementById("email_field").value;
-	var userPass = document.getElementById("password_field").value;
+app.post("/admin/login", (req, res) => {
+    usuarios.map(function (val) {
+        if (val.login == req.body.login && val.password == req.body.password) {
+            req.session.login = "guilherme";
+        }
+    });
 
-	firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-      // Handle Errors here.
-     var errorCode = error.code;
-     var errorMessage = error.message;
-	  // ...
-	  window.alert("Error "+ errorMessage);
-	});
-}
-function logout(){
-	firebase.auth().signOut();
-}
+    res.redirect("/admin/login");
+});
 
-function registration(){
-	var user_email = document.getElementById("user_email").value;
-	var user_password = document.getElementById("user_password").value;
-	var confrom_password = document.getElementById("confrom_password").value;
-	if (user_password == confrom_password) {
+app.post("/admin/cadastro", (req, res) => {
+    //proxima aula, inserir no banco de dados
+    console.log(req.body);
+    Posts.create({
+        titulo: req.body.titulo_noticia,
+        image: req.body.url_image,
+        categoria: "nenhuma",
+        conteudo: req.body.noticia,
+        slug: req.body.slug,
+        autor: "Admin",
+        views: 0,
+    });
+    res.send("Cadastrado com sucesso!!");
+});
 
-		firebase.auth().createUserWithEmailAndPassword(user_email, user_password).catch(function(error) {
-			  // Handle Errors here.
-			  var errorCode = error.code;
-			  var errorMessage = error.message;
-			  // ...
-			  window.alert("Error "+ errorMessage);
-			});
-		
-	var user = firebase.auth().currentUser;
+app.get("/admin/login", (req, res) => {
+    if (req.session.login == null) {
+        res.render("admin-login");
+    } else {
+        Posts.find({})
+            .sort({ _id: -1 })
+            .exec(function (err, posts) {
+                //console.log(posts[0]);
+                posts = posts.map(function (val) {
+                    return {
+                        titulo: val.titulo,
+                        conteudo: val.conteudo,
+                        miniDescricao: val.conteudo.substr(0, 100),
+                        image: val.image,
+                        slug: val.slug,
+                        categoria: val.categoria,
+                    };
+                });
+                res.render("admin-panel",{posts:posts});
+            });
+    }
+});
 
-    user.sendEmailVerification().then(function() {
-      // Email sent.
-      window.alert("Verification url sent.");
-     }).catch(function(error) {
-      // An error happened.
-      window.alert("Error "+ errorMessage);
-     });
+app.get("/admin/deletar/:id", (req, res) => {
+        res.send("deletado a noticia com id" + req.params.id);
+});
 
+const port = 8888;
+app.listen(port, () => {
+    console.log("Server Runing...");
+    console.log("View project in: http://localhost:" + port + "/");
+});
 
-	}else{
-		window.alert("Password and Confrom Password dose not Match");
-	}
-}
-
-function reg_account(){
-  document.getElementById("registration-div").style.display = "block";
-  document.getElementById("login-div").style.display = "none";
-  document.getElementById("send-verification-div").style.display = "none";
-}
-
-function send_verification(){
-
-	var user = firebase.auth().currentUser;
-
-    user.sendEmailVerification().then(function() {
-      // Email sent.
-      //window.alert("Verification url sent.");
-     }).catch(function(error) {
-      // An error happened.
-      window.alert("Error "+ errorMessage);
-     });
-}
-function myFunction_reload() {
-    location.reload();
-}
+//problema ao indentificar o id do posts para deleta-lo
