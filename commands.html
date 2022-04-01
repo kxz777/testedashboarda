@@ -1,156 +1,466 @@
-<html><head><style type="text/css">.styles_overlay__CLSq- {
-  background: rgba(0, 0, 0, 0.75);
-  display: flex;
-  align-items: flex-start;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  z-index: 1000;
-  padding: 1.2rem;
-}
-.styles_overlayCenter__YHoO7 {
-  align-items: center;
-}
-.styles_modal__gNwvD {
-  max-width: 800px;
-  position: relative;
-  padding: 1.2rem;
-  background: #ffffff;
-  background-clip: padding-box;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
-  margin: auto;
-}
-.styles_closeButton__20ID4 {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-}
-.styles_closeIcon__1QwbI {
-}
-.styles_transitionEnter__3j_-a {
-  opacity: 0.01;
-}
-.styles_transitionEnterActive___eQs7 {
-  opacity: 1;
-  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.styles_transitionExit__1KmEf {
-  opacity: 1;
-}
-.styles_transitionExitActive__1nQXw {
-  opacity: 0.01;
-  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-</style><meta charset="utf-8"><meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi"><meta name="theme-color" content="#000000"><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=probot.io&amp;callback=_gfp_s_&amp;client=ca-pub-5777260922509809&amp;cookie=ID%3Dbba270b0ad386535-22630835f7b300a0%3AT%3D1648826772%3ART%3D1648826772%3AS%3DALNI_MZ4rOZk5DJQnzPLIiqkUQhRpMU59g"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/gZWLhEUEJFxEhoT5hpjn2xHK/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-4NL1zDH0k55BBrYurM9ld/CHtYVVwKei1JQRVs6UZRzHwv6MvBM1fFMsOO/+LiRl"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202203280101/show_ads_impl_fy2019.js?bust=31065971" id="google_shimpl"></script><script type="text/javascript" async="" src="https://certify-js.alexametrics.com/atrk.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/cdn-cgi/apps/head/ZoCSy_a1gKpFx0AVgj1f_8AGaqY.js"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-138143365-1"></script><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><meta name="google" content="notranslate"><title>Comandos ProBot</title><meta name="description" content="Welcome images, moderation, leveling, reaction roles, logs, high quality music and many many more!"><meta name="keywords" content="Discord bot, Moderation bot, Music bot, بوت ديسكورد"><link rel="alternate" hreflang="en" href="https://probot.io/en"><link rel="alternate" hreflang="ar" href="https://probot.io/ar"><link rel="alternate" hreflang="tr" href="https://probot.io/tr"><link rel="alternate" hreflang="zh" href="https://probot.io/zh"><link rel="alternate" hreflang="uk" href="https://probot.io/uk"><link rel="alternate" hreflang="ru" href="https://probot.io/ru"><link rel="alternate" hreflang="de" href="https://probot.io/de"><link rel="alternate" hreflang="pl" href="https://probot.io/pl"><link rel="alternate" hreflang="pt" href="https://probot.io/pt"><link rel="alternate" hreflang="nl" href="https://probot.io/nl"><link rel="alternate" hreflang="it" href="https://probot.io/it"><link rel="alternate" hreflang="es" href="https://probot.io/es"><link rel="alternate" hreflang="bg" href="https://probot.io/bg"><link rel="alternate" hreflang="fr" href="https://probot.io/fr"><link rel="alternate" hreflang="ro" href="https://probot.io/ro"><link rel="alternate" hreflang="ja" href="https://probot.io/ja"><link rel="alternate" hreflang="hu" href="https://probot.io/hu"><link rel="alternate" hreflang="el" href="https://probot.io/el"><link rel="alternate" hreflang="zh_TW" href="https://probot.io/zh_TW"><link rel="alternate" hreflang="cs" href="https://probot.io/cs"><link rel="alternate" hreflang="hi" href="https://probot.io/hi"><link rel="alternate" hreflang="sk" href="https://probot.io/sk"><link rel="alternate" hreflang="x-default" href="https://probot.io/"><script async="" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" defer="defer" type="text/javascript"></script><script type="text/javascript">_atrk_opts={atrk_acct:"FrPkm1akGFL1O7",domain:"probot.io",dynamic:!0},function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://certify-js.alexametrics.com/atrk.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}()</script><noscript><img src="https://certify.alexametrics.com/atrk.gif?account=FrPkm1akGFL1O7" style="display:none" height="1" width="1" alt=""/></noscript><script async="" data-ad-client="ca-pub-5777260922509809" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript" data-checked-head="true"></script><link href="/static/css/main.8e8fc0be.css" rel="stylesheet"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><style></style><link rel="preload" href="https://adservice.google.com.br/adsid/integrator.js?domain=probot.io" as="script"><script type="text/javascript" src="https://adservice.google.com.br/adsid/integrator.js?domain=probot.io"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=probot.io" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=probot.io"></script><style data-emotion="css"></style><link rel="alternate" hreflang="ar" href="https://probot.io/ar/commands" data-react-helmet="true"><link rel="alternate" hreflang="bg" href="https://probot.io/bg/commands" data-react-helmet="true"><link rel="alternate" hreflang="ckb" href="https://probot.io/ckb/commands" data-react-helmet="true"><link rel="alternate" hreflang="cs" href="https://probot.io/cs/commands" data-react-helmet="true"><link rel="alternate" hreflang="da" href="https://probot.io/da/commands" data-react-helmet="true"><link rel="alternate" hreflang="de" href="https://probot.io/de/commands" data-react-helmet="true"><link rel="alternate" hreflang="el" href="https://probot.io/el/commands" data-react-helmet="true"><link rel="alternate" hreflang="en" href="https://probot.io/en/commands" data-react-helmet="true"><link rel="alternate" hreflang="es" href="https://probot.io/es/commands" data-react-helmet="true"><link rel="alternate" hreflang="fa" href="https://probot.io/fa/commands" data-react-helmet="true"><link rel="alternate" hreflang="fi" href="https://probot.io/fi/commands" data-react-helmet="true"><link rel="alternate" hreflang="fr" href="https://probot.io/fr/commands" data-react-helmet="true"><link rel="alternate" hreflang="hi" href="https://probot.io/hi/commands" data-react-helmet="true"><link rel="alternate" hreflang="hr" href="https://probot.io/hr/commands" data-react-helmet="true"><link rel="alternate" hreflang="hu" href="https://probot.io/hu/commands" data-react-helmet="true"><link rel="alternate" hreflang="it" href="https://probot.io/it/commands" data-react-helmet="true"><link rel="alternate" hreflang="ja" href="https://probot.io/ja/commands" data-react-helmet="true"><link rel="alternate" hreflang="ko" href="https://probot.io/ko/commands" data-react-helmet="true"><link rel="alternate" hreflang="lt" href="https://probot.io/lt/commands" data-react-helmet="true"><link rel="alternate" hreflang="nl" href="https://probot.io/nl/commands" data-react-helmet="true"><link rel="alternate" hreflang="no" href="https://probot.io/no/commands" data-react-helmet="true"><link rel="alternate" hreflang="pl" href="https://probot.io/pl/commands" data-react-helmet="true"><link rel="alternate" hreflang="pt_BR" href="https://probot.io/pt_BR/commands" data-react-helmet="true"><link rel="alternate" hreflang="pt" href="https://probot.io/pt/commands" data-react-helmet="true"><link rel="alternate" hreflang="ro" href="https://probot.io/ro/commands" data-react-helmet="true"><link rel="alternate" hreflang="ru" href="https://probot.io/ru/commands" data-react-helmet="true"><link rel="alternate" hreflang="sk" href="https://probot.io/sk/commands" data-react-helmet="true"><link rel="alternate" hreflang="sr" href="https://probot.io/sr/commands" data-react-helmet="true"><link rel="alternate" hreflang="sv" href="https://probot.io/sv/commands" data-react-helmet="true"><link rel="alternate" hreflang="th" href="https://probot.io/th/commands" data-react-helmet="true"><link rel="alternate" hreflang="tr" href="https://probot.io/tr/commands" data-react-helmet="true"><link rel="alternate" hreflang="uk" href="https://probot.io/uk/commands" data-react-helmet="true"><link rel="alternate" hreflang="vi" href="https://probot.io/vi/commands" data-react-helmet="true"><link rel="alternate" hreflang="zh" href="https://probot.io/zh/commands" data-react-helmet="true"><link rel="alternate" hreflang="zh_TW" href="https://probot.io/zh_TW/commands" data-react-helmet="true"><link rel="alternate" hreflang="botLangs" href="https://probot.io/botLangs/commands" data-react-helmet="true"><link rel="alternate" hreflang="ex" href="https://probot.io/ex/commands" data-react-helmet="true"><link rel="alternate" hreflang="x-default" href="https://probot.io/commands" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="wrapper theme-6-active pimary-color-pink darkmode"><nav class="navbar navbar-inverse navbar-fixed-top"><ul class="nav navbar-nav navbar-left "></ul><ul class="nav navbar-nav navbar-right"><li class="hidden-xs"><a href="/commands">Comandos</a></li><li class="hidden-xs"><a target="_blank" href="https://discord.gg/ProBot">Suporte</a></li><li><div class="dropdown  inline-block pull-right dropdowntext"><a class="dropdown__trigger "><img class="flag" alt="pt flag" src="/static/flags/pt.png"></a><div class="dropdown__content "><ul style="height: 50vh; overflow: auto;"><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/sa.png"><p class="langp">Arabic</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/bg.png"><p class="langp">Bulgarian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/kurd.png"><p class="langp">Sorani, Kurdish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/cz.png"><p class="langp">Czech</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/dk.png"><p class="langp">Danish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/de.png"><p class="langp">German</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/gr.png"><p class="langp">Greek</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/us.png"><p class="langp">English</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/es.png"><p class="langp">Spanish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/ir.png"><p class="langp">Persian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/fi.png"><p class="langp">Finnish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/fr.png"><p class="langp">French</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/in.png"><p class="langp">Hindi</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/hr.png"><p class="langp">Croatian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/hu.png"><p class="langp">Hungarian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/it.png"><p class="langp">Italian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/jp.png"><p class="langp">Japanese</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/kr.png"><p class="langp">Korean</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/lt.png"><p class="langp">Lithuanian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/nl.png"><p class="langp">Dutch</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/no.png"><p class="langp">Norwegian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/pl.png"><p class="langp">Polish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/br.png"><p class="langp">Portuguese, Brazilian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/ro.png"><p class="langp">Romanian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/ru.png"><p class="langp">Russian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/sk.png"><p class="langp">Slovak</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/cz.png"><p class="langp">Serbian (Latin)</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/se.png"><p class="langp">Swedish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/th.png"><p class="langp">Thai</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/tr.png"><p class="langp">Turkish</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/ua.png"><p class="langp">Ukrainian</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/vn.png"><p class="langp">Vietnamese</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/cn.png"><p class="langp">Chinese Simplified</p></a></li><li class="pointer"><a class="langp"><img class=" inside-flag" src="/static/flags/tw.png"><p class="langp">Chinese Traditional</p></a></li></ul></div></div></li></ul><div class=" "><div class="probot-logo"><div class="react-reveal" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-770877051546384-1;"><a href="/"><img class="brand-img" src="/static/logo1.jpg" alt="brand"></a></div></div></div><div class="dramexNav inline-block pull-right"></div></nav><div class="outside-panel container"><div class="center mb-30"><h2 class="pt-50 mb-10">Comandos ProBot</h2><input type="text" class="form-control" placeholder="Procurar por comando "></div><div class="crtl"><ul role="tablist" class="nav nav-pills commands-pills mb-20" id="myTabs_6"><li class="active"><a>Tudo</a></li><li class=""><a>Geral</a></li><li class=""><a>Social</a></li><li class=""><a>Info</a></li><li class=""><a>Moderação</a></li><li class=""><a>Música</a></li><li class=""><a>Premium</a></li></ul> </div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#moveme</h6> <p class="inline"> - Move-o para outro canal de voz. </p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#moveme [channel or user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#moveme general
-#moveme @Dramex</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#profile</h6> <p class="inline"> - Veja o seu cartão de perfil pessoal personalizável ou o de outra pessoa.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#profile (user)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#profile
-#profile @Dramex
-#profile 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#rank</h6> <p class="inline"> - Veja o seu cartão de rank ou o de outra pessoa no servidor. </p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#rank (user)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#rank
-#rank @Dramex
-#rank 728882410384785451</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#rep</h6> <p class="inline"> - Recompense alguém com um ponto de reputação. Só pode ser usado uma vez a cada 24 horas.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#rep [user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#rep
-#rep @Dramex
-#rep 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#top</h6> <p class="inline"> - Mostrar os membros no top por texto ou voz.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#top (day / week / month)
-#top (text / voice/ invites) (page number)
-#top (text / voice) (role)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#top day
-#top week
-#top month
-#top text day 
-#top voice week 2
-#top invites
-#top text @members</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#user</h6> <p class="inline"> - Mostra informações, como ID e data de entrada, sobre si ou outro utilizador.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#user (user)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#user
-#user @Dramex
-#user 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#avatar</h6> <p class="inline"> - Obtem o avatar de um utilizador.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#avatar
-#avatar server
-#avatar [user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#avatar
-#avatar server
-#avatar @Dramex
-#avatar 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#server</h6> <p class="inline"> - Mostra informações sobre o servidor</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#server</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#roles</h6> <p class="inline"> - Obtem uma lista de cargos do servidor e a quantidade de membros.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#roles</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#credits</h6> <p class="inline"> - Mostra o seu saldo ou o de alguém.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#credits
-#credits [user]
-#credits [user] [amount]
-#credits [user] [amount] [reason]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#credits
-#credits @Dramex
-#credits @Dramex 15000
-#credits @Dramex 15000 Hello</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#daily</h6> <p class="inline"> - Receba o seu salário diário.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#daily</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#title</h6> <p class="inline"> - Altera o seu título no comando `#profile`.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#title
-#title [new title]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#title This is a Title</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#setnick</h6> <p class="inline"> - Altera o apelido de um membro.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#setnick [user] (New nickname)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#setnick @Dramex Developer</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#ban</h6> <p class="inline"> - Bane um membro. </p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#ban [user] (time m/h/d/mo/y) (reason)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#ban @Dramex
-#ban @Dramex spamming
-#ban @Dramex 1h spamming
-#ban @Dramex 1d spamming
-#ban @Dramex 1w </p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#unban</h6> <p class="inline"> - Desbane um membro. </p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#unban [user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#unban Dramex
-#unban 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#kick</h6> <p class="inline"> - Expulsa um membro.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#kick [user] (reason)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#kick @Dramex
-#kick 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#vkick</h6> <p class="inline"> - Expulsa um membro de um canal de voz</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#vkick [user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#vkick @Dramex</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#mute</h6> <p class="inline"> - Muta um membro para não puder mandar mensagens.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#mute [user] (time ends with m,h,d,mo,y) (reason)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#mute @Dramex 1m Spamming
-#mute @Dramex 1h
-#mute @Dramex 1d
-#mute @Dramex 1mo
-#mute @Dramex 1y</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#unmute</h6> <p class="inline"> - Desmuta um membro.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#unmute [user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#unmute @Dramex
-#unmute 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#vmute</h6> <p class="inline"> - Muta um membro para não puder falar num canal de voz.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#vmute [user] (time ends with m,h,d,mo,y) (reason)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#vmute @Dramex 1m annoying
-#vmute @Dramex 1h
-#vmute @Dramex 1d
-#vmute @Dramex 1mo
-#vmute @Dramex 1y</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#unvmute</h6> <p class="inline"> - Desmuta um membro para falar em canais de voz.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#unvmute [user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#unvmute @Dramex
-#unvmute 157605500488384512</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#clear</h6> <p class="inline"> - Limpa mensagens de um canal.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#clear (number of messages)
-#clear bots (number of messages)
-#clear [user] (number of messages)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#clear
-#clear 1000
-#clear bots 10
-#clear @Dramex 10</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#move</h6> <p class="inline"> - Move um membro para outro canal de voz. </p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#move [user] (user or channel)
-#move all</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#move @Dramex 
-#move @Dramex General</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#role</h6> <p class="inline"> - Adiciona/remove cargo(s) de um membro.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#role [user] (+/-)(roles names separated by comma)
-#role all (+/-)(role name)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#role @Dramex Admin
-#role all members
-#role bots System
-#role humans members</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#points</h6> <p class="inline"> - A server based points that can be given by moderators.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">`#points` - see all points
-`#points [user] 1` - set the points of a user
-`#points [user] +1` - increase the points of a user
-`#points [user] -1` - decrease the points of a user
-`#points [user] 0` -  reset the points of a user
-`#points reset` - resets all points
-#points [role name] - filters the points by a role</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#points @Dramex 1
-#points @Dramex +1 
-#points @Dramex -1
-#points @Dramex 0
-#points reset
-#points Admin</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#warn</h6> <p class="inline"> - Avisa um membro. </p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#warn [user] [reason]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#warn @Dramex
-#warn @Dramex spamming </p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#removewarn</h6> <p class="inline"> - Remove advertências do utilizador.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#removewarn [warnID]
-#removewarn [user]
-#removewarn all</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#removewarn 1810
-#removewarn @Dramex
-#removewarn all</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#warnings</h6> <p class="inline"> - Obtém a lista de advertências do servidor ou utilizador.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#warnings (user)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#warnings
-#warnings @Dramex</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#lock</h6> <p class="inline"> - Desativa @everyone de enviar mensagens num canal específico.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#lock (channel)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#lock
-#lock general</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#unlock</h6> <p class="inline"> - Remove as mensagens negadas de @everyone no canal específico.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#unlock (channel)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#unlock
-#unlock general</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#temp</h6> <p class="inline"> - Faz um canal temporário.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#temp on
- #temp off
-#temp time [duration]
-#temp max [limit]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#temp on
-#temp off
-#temp time 5
-#temp max 1</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#reset</h6> <p class="inline"> - Redefine o XP de texto/voz/convite para um ou todos os membros.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#reset [text / voice / invites) [all / user]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#reset text all
-#reset voice all
-#reset invites all
-#reset text @Dramex</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#color</h6> <p class="inline"> - Mude a sua cor no servidor.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#color [color's number]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#color 15</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#colors</h6> <p class="inline"> - Mostra todas as cores disponíveis.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#colors</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#setcolor</h6> <p class="inline"> - Muda a cor do cargo por código hexadecimal.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#setcolor [role name] [color code]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#setcolor members #000001</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#short</h6> <p class="inline"> - Encorta um link.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#short [link]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#short https://probot.io/This-is-A-Very-Long-Link-lol</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#roll</h6> <p class="inline"> - Rolando dados.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#roll (number)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#roll
-#roll 100</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#play</h6> <p class="inline"> - Adiciona uma música à fila e toca-a.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#play [song title] - plays the first result from Youtube
-#play [URL] - plays the provided song, playlist, or stream</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#play Havana
-#play https://www.youtube.com/watch?v=HCjNJDNzw8Y</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#search</h6> <p class="inline"> - Pesquisas por resultados para tocar.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#search [song's name]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#search Havana</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#queue</h6> <p class="inline"> - Mostra as faixas atuais em espera na lista de reprodução.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#queue</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#stop</h6> <p class="inline"> - Para a música atual e limpa toda a fila de reprodução em espera.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#stop</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#vol</h6> <p class="inline"> - Altera/mostra o volume atual.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#vol (volume)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#vol
-#vol 100</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#pause</h6> <p class="inline"> - Pausa a música atualmente reproduzida.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#pause</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#np</h6> <p class="inline"> - Mostra a música que o bot está reproduzindo</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#np</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#skip</h6> <p class="inline"> - Salta a música atual.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#skip</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#repeat</h6> <p class="inline"> - Ativa/desativa o modo de repetição.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#repeat</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#seek</h6> <p class="inline"> - Procura por um determinado ponto na faixa atual.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#seek [target point]</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#seek 11:00</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#24/7</h6> <p class="inline"> - Ativa/desativa o modo 24/7. Isto faz com que o bot não saia do canal de voz até que o pares.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#24/7</p></div></div></div></div><div><div class="panel panel-default helpcommand  "><div class="panel-heading click"><div class="pull-left"><h6 class="helpcommandLT">#vip</h6> <p class="inline"> - Mostra informações sobre o seu bot premium.</p></div><div class="clearfix"></div></div><div class="panel-wrapper hidden"><div class="panel-body panel-body-rtl"><h3 class="helpcommandHead">Usage:</h3><p class="helpcommandContent">#vip
- #vip move (bot's number)
-#vip transfer (bot's number) [user]
-#vip restart
-#vip avatar [avatar link]
-#vip username [new name]
-#vip status (new status)
-#vip whitelist (user)</p><p class="helpcommandHead">Exemplos</p><p class="helpcommandContent">#vip
-#vip move
-#vip move 1000
-#vip transfer 1000 @Dramex
-#vip restart
-#vip avatar http://i8.ae/sN6XG
-#vip username SystemBot
-#vip status SystemBot
-#vip whitelist @Dramex</p></div></div></div></div></div></div></div><script type="text/javascript" src="/static/js/main.8beadd89.js"></script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6f52582018d5a5af&quot;,&quot;token&quot;:&quot;aad7555beb10447480fad578851bd95c&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
-<ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done" data-ad-status="unfilled"><ins id="aswift_0_expand" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" trusttoken="{&quot;type&quot;:&quot;send-redemption-record&quot;,&quot;issuers&quot;:[&quot;https://pagead2.googlesyndication.com&quot;],&quot;refreshPolicy&quot;:&quot;none&quot;,&quot;signRequestData&quot;:&quot;include&quot;,&quot;includeTimestampHeader&quot;:true,&quot;additionalSignedHeaders&quot;:[&quot;sec-time&quot;,&quot;Sec-Redemption-Record&quot;],&quot;additionalSigningData&quot;:&quot;eyJ1cmwiOiJodHRwczovL3Byb2JvdC5pby9pZCJ9&quot;}" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5777260922509809&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1642802464&amp;plat=8%3A134217728%2C9%3A134250504%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fprobot.io%2Fid&amp;ea=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTkuMC40ODQ0Ljg0IixbXSxudWxsLG51bGwsIjY0IixbWyIgTm90IEE7QnJhbmQiLCI5OS4wLjAuMCJdLFsiQ2hyb21pdW0iLCI5OS4wLjQ4NDQuODQiXSxbIkdvb2dsZSBDaHJvbWUiLCI5OS4wLjQ4NDQuODQiXV0sZmFsc2Vd&amp;tt_state=W3siaXNzdWVyT3JpZ2luIjoiaHR0cHM6Ly9wYWdlYWQyLmdvb2dsZXN5bmRpY2F0aW9uLmNvbSIsInN0YXRlIjoyMCwiaGFzUmVkZW1wdGlvblJlY29yZCI6dHJ1ZX1d&amp;dt=1648826803292&amp;bpp=15&amp;bdt=1465&amp;idt=1439&amp;shv=r20220330&amp;mjsv=m202203280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Dbba270b0ad386535-22630835f7b300a0%3AT%3D1648826772%3ART%3D1648826772%3AS%3DALNI_MZ4rOZk5DJQnzPLIiqkUQhRpMU59g&amp;nras=1&amp;correlator=6335214784209&amp;frm=20&amp;pv=2&amp;ga_vid=225656549.1648826764&amp;ga_sid=1648826805&amp;ga_hid=709595515&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=8&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_sd=1&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1366&amp;bih=657&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C44760474%2C31065971%2C31066018%2C21067496&amp;oid=2&amp;pvsid=2682136404925745&amp;pem=496&amp;tmod=1046914402&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fprobot.io%2Fdashboard&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1366%2C0%2C1366%2C728%2C1366%2C657&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=1510" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20220330/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
+<body>
+<div id="__nuxt"><!----><div id="__layout"><div data-v-6c4fae6b="" id="app"><header data-v-86c941dc="" data-v-6c4fae6b=""><nav data-v-86c941dc="" class="navbar navbar-dark navbar-expand-xl"><a data-v-86c941dc="" href="/" class="navbar-brand nuxt-link-active" target="_self"><img data-v-86c941dc="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSIwcHgiDQogICAgIHk9IjBweCINCiAgICAgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAyNCAxMDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQogICAgPGc+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTY0Ny4zLDEwMTkuN2MtMTAwLjktMzQuMy0yMDAuNy02OS4yLTI5OS41LTEwNC45QzI0Ny43LDY4My41LDE1MCw0NTEuNiw1NC44LDIxOC45bDguNS0xNQ0KCQljNS43LTQuMywxMi44LTYuMSwyMS4zLTUuM2MxMDAuOSwzNC4zLDIwMS40LDY5LjIsMzAxLjYsMTA0LjlsODYuMywxOTguMWM1NC0xNjMuNSwxMDkuMS0zMjYuNSwxNjUuMi00ODkuMw0KCQljNi40LTUuNywxNC42LTcuOCwyNC41LTYuNGM5OS41LDM0LjMsMTk5LjMsNjguOSwyOTkuNSwxMDMuOGM1LDUuNyw3LjEsMTMuMiw2LjQsMjIuNUM4NzAuOCw0MjYuOSw3NzIsNzIxLDY3MS45LDEwMTQuNA0KCQlDNjY1LjUsMTAyMC4xLDY1Ny4zLDEwMjEuOSw2NDcuMywxMDE5Ljd6IE02MTAuMSw5NTMuM3YtMi4xTDM0OC45LDMzOS45bC0yMjMuOC03NWwtMS4xLDIuMWwyNjEuMSw2MTIuNEw2MTAuMSw5NTMuM3oNCgkJIE02NTMuNyw5MjMuNHYtMy4ybDI1Ny45LTc3Ni4yTDY3MC44LDYyLjVMNTAxLjMsNTczLjNsMTUxLjMsMzUxLjJMNjUzLjcsOTIzLjR6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==" alt="Vexera" title="Home" class="logo"></a> <button data-v-86c941dc="" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed" aria-expanded="false" aria-controls="nav-collapse" style="overflow-anchor: none;"><span class="navbar-toggler-icon"></span></button> <div data-v-86c941dc="" id="nav-collapse" class="navbar-collapse collapse" style="display: none;"><ul data-v-86c941dc="" class="navbar-nav"><li data-v-86c941dc="" title="Commands" class="nav-item"><a data-v-86c941dc="" href="/commands" class="nav-link nuxt-link-exact-active nuxt-link-active" target="_self" aria-current="page"><svg data-v-86c941dc="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-list fa-w-16"><path data-v-86c941dc="" fill="currentColor" d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z" class=""></path></svg>
+          Commands
+        </a></li> <li data-v-86c941dc="" title="Documentation" class="nav-item"><a data-v-86c941dc="" href="/docs" class="nav-link" target="_self"><svg data-v-86c941dc="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-book fa-w-14"><path data-v-86c941dc="" fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z" class=""></path></svg>
+          Documentation
+        </a></li> <li data-v-86c941dc="" title="Blog" class="nav-item"><a data-v-86c941dc="" href="/blog" class="nav-link" target="_self"><svg data-v-86c941dc="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="stream" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-stream fa-w-16"><path data-v-86c941dc="" fill="currentColor" d="M16 128h416c8.84 0 16-7.16 16-16V48c0-8.84-7.16-16-16-16H16C7.16 32 0 39.16 0 48v64c0 8.84 7.16 16 16 16zm480 80H80c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm-64 176H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16z" class=""></path></svg>
+          Blog
+        </a></li> <li data-v-86c941dc="" title="Community Server" class="nav-item"><a data-v-86c941dc="" href="/support" rel="noopener" target="_blank" class="nav-link"><svg data-v-86c941dc="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-discord fa-w-20"><path data-v-86c941dc="" fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" class=""></path></svg>
+          Community Server
+        </a></li> <li data-v-86c941dc="" title="Upgrade" class="nav-item upgrade"><a data-v-86c941dc="" href="#" target="_self" class="nav-link"><a data-v-86c941dc="" href="/premium" class="btn my-2 my-sm-0 btn-outline-premium" target="_self"><span data-v-86c941dc="">Upgrade</span></a></a></li></ul> <ul data-v-86c941dc="" class="navbar-nav ml-auto"><li data-v-86c941dc="" title="Twitter" class="nav-item twitter"><a data-v-86c941dc="" href="https://twitter.com/VexeraDiscord" rel="noopener" target="_blank" class="nav-link"><svg data-v-86c941dc="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16"><path data-v-86c941dc="" fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path></svg></a></li> <li data-v-86c941dc="" class="nav-item login"><a data-v-86c941dc="" href="#" target="_self" class="nav-link"><span data-v-86c941dc="" title="Log in with Discord" class="blurple">Log in with Discord</span></a></li></ul></div></nav></header> <div data-v-6c4fae6b="" class="main-content container"><div data-v-0ef2f6a0="" data-v-6c4fae6b="" class="row"><div data-v-0ef2f6a0="" class="col-md-4 col-sm-12"><div data-v-0ef2f6a0="" class="sticky"><div data-v-0ef2f6a0="" class="categories"><h6 data-v-0ef2f6a0="" class="subheading">Categories</h6> <div data-v-0ef2f6a0="" class="horizontal-line"></div> <div data-v-0ef2f6a0="" class="category active">
+          All
+        </div> <div data-v-0ef2f6a0="" class="category">
+          Admin
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Autorole
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Fun
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Games
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Image
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Info
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Meme
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Misc
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Music
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Perms
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Premium
+          <br data-v-0ef2f6a0=""></div><div data-v-0ef2f6a0="" class="category">
+          Settings
+          <br data-v-0ef2f6a0=""></div></div> <div data-v-767b169a="" data-v-0ef2f6a0=""><div data-v-767b169a="" id="placement-commands-skyscraper-side" class="np-placement" data-request-id="cca95bd6-e39a-4b8f-9854-5dfa6d24aeb4" data-report="{&quot;enabled&quot;:true,&quot;wording&quot;:&quot;Report&quot;,&quot;position&quot;:&quot;bottom-right&quot;}" data-bidder="amazon" data-creative-id="" style="min-height: 600px; text-align: center; font-size: 0px; position: relative;"><iframe width="300px" height="600px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" title="advertisement" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-forms" srcdoc="<html><body style=&quot;margin:0; padding: 0; overflow: hidden;&quot;></body></html>" style="width: 300px; border: none; margin: 0px auto; display: block; height: 600px;"></iframe><img src="https://tracker.nitropay.com/pixel.png?s=329&amp;wb=eyJhZFVuaXRDb2RlIjoicGxhY2VtZW50LWNvbW1hbmRzLXNreXNjcmFwZXItc2lkZSIsImJpZGRlciI6ImFtYXpvbiIsIndpZHRoIjozMDAsImhlaWdodCI6NjAwLCJjcG0iOjAuMywiY3JlYXRpdmVJZCI6IiIsImhyZWYiOiJodHRwczovL3ZleGVyYS5pby9jb21tYW5kcyIsImFjY2VwdGFibGUiOmZhbHNlLCJyZXF1ZXN0SWQiOiJjY2E5NWJkNi1lMzlhLTRiOGYtOTg1NC01ZGZhNmQyNGFlYjQiLCJ0aW1lVG9SZXNwb25kIjo0OTQsImMiOiJCUiIsInIiOiJNRyIsInRpbWVzdGFtcCI6MTY0ODgyODA5Nzc5Mn0%3D" style="display: none;"><div class="report-link" style="width: 300px; height: 20px; left: 50%; transform: translateX(-50%); z-index: 99998; text-align: right; top: 610px; position: absolute;"><a href="javascript:;" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px; text-transform: uppercase; text-decoration: none; color: rgb(119, 119, 119); display: inline-block; height: 10px; margin-top: 10px;">Report</a></div></div></div></div></div> <div data-v-0ef2f6a0="" class="col-md-8 col-sm-12 commands"><div data-v-0ef2f6a0="" title="+ban" class="command">
+      +ban<span data-v-0ef2f6a0="" class="grey"> - Bans a member and deletes their message history of the previous 24 hours.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+ban &lt;member&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.ban<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+ban @luke</code> -
+            <span data-v-0ef2f6a0="">Bans user 'luke'</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+ban @luke 1w2d Advertising</code> -
+            <span data-v-0ef2f6a0="">Bans user 'luke' for 1 week and two days with reason 'Advertising'</span></div></div></div></div><div data-v-0ef2f6a0="" title="+clean" class="command">
+      +clean<span data-v-0ef2f6a0="" class="grey"> - Cleans messages from a channel.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+clean &lt;amount&gt; [user]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.clean<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+clean 10</code> -
+            <span data-v-0ef2f6a0="">Cleans 10 messages</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+clean 100</code> -
+            <span data-v-0ef2f6a0="">Cleans 100 messages</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+clean 100 luke</code> -
+            <span data-v-0ef2f6a0="">Cleans 100 messages from the user <code>luke</code></span></div></div></div></div><div data-v-0ef2f6a0="" title="+infractions" class="command">
+      +infractions<span data-v-0ef2f6a0="" class="grey"> - Views infractions for a user.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+infractions &lt;member&gt; [page=1]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.infractions<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+kick" class="command">
+      +kick<span data-v-0ef2f6a0="" class="grey"> - Kicks a user.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+kick &lt;member&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.kick<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+mute" class="command">
+      +mute<span data-v-0ef2f6a0="" class="grey"> - Mutes a user.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+mute &lt;member&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.mute<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+mute @luke</code> -
+            <span data-v-0ef2f6a0="">Mutes user 'luke'</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+mute @luke 1w2d Spamming</code> -
+            <span data-v-0ef2f6a0="">Mutes user 'luke' for 1 week and two days with reason 'Spamming'</span></div></div></div></div><div data-v-0ef2f6a0="" title="+reason" class="command">
+      +reason<span data-v-0ef2f6a0="" class="grey"> - Sets a reason for a mod log infraction.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+reason &lt;case&gt; &lt;reason&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: admin.reason<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+role" class="command">
+      +role<span data-v-0ef2f6a0="" class="grey"> - Manage Roles</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+role &lt;action&gt; &lt;member&gt; &lt;role&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: admin.role<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+role add Moderators Admins</code> -
+            <span data-v-0ef2f6a0="">Add the <code>Admins</code> role to everyone with the <code>Moderators</code> role</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+role add luke Admins</code> -
+            <span data-v-0ef2f6a0="">Add the user <code>luke</code> to the role <code>Admins</code></span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+role remove everyone Moderators</code> -
+            <span data-v-0ef2f6a0="">Remove the <code>Moderators</code> role from everyone</span></div></div></div></div><div data-v-0ef2f6a0="" title="+softban" class="command">
+      +softban<span data-v-0ef2f6a0="" class="grey"> - Softbans a user (kick the user and cleans all their messages from the previous 24 hours)</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+softban &lt;member&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.softban<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+unban" class="command">
+      +unban<span data-v-0ef2f6a0="" class="grey"> - Unbans a user.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+unban &lt;user&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.unban<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+vckick" class="command">
+      +vckick<span data-v-0ef2f6a0="" class="grey"> - Kicks a member from a voice channel</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+vckick &lt;member&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.vckick<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+warn" class="command">
+      +warn<span data-v-0ef2f6a0="" class="grey"> - Creates a warn infraction.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+warn &lt;member&gt; [reason]</code><br data-v-0ef2f6a0="">
+        Permission node: admin.warn<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+autorole" class="command">
+      +autorole<span data-v-0ef2f6a0="" class="grey"> - Assigns roles. Ensure the role for me is above the role you want me to give, otherwise I wont have permission.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+autorole &lt;action&gt; [type] [role]</code><br data-v-0ef2f6a0="">
+        Permission node: autorole.autorole<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autorole add join Humans</code> -
+            <span data-v-0ef2f6a0="">Gives the role <code>Humans</code> to users on join.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autorole add get Announcements</code> -
+            <span data-v-0ef2f6a0="">Users can now do <code>+getrole Announcements</code> to get that role.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autorole add bot Bots</code> -
+            <span data-v-0ef2f6a0="">Bots will get this role when they join.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autorole remove join Humans</code> -
+            <span data-v-0ef2f6a0="">Remove the autorole for <code>Humans</code>.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autorole list</code> -
+            <span data-v-0ef2f6a0="">List all autoroles.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+getrole" class="command">
+      +getrole<span data-v-0ef2f6a0="" class="grey"> - Gets a role with the `get` condition from +autorole</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+getrole &lt;role&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: autorole.getrole<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+8ball" class="command">
+      +8ball<span data-v-0ef2f6a0="" class="grey"> - Cannot predict now</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+8ball </code><br data-v-0ef2f6a0="">
+        Permission node: fun.8ball<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+ascii" class="command">
+      +ascii<span data-v-0ef2f6a0="" class="grey"> - Converts text into ASCII. A list of fonts can be found at https://github.com/patorjk/figlet.js/tree/master/fonts.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+ascii &lt;font&gt; &lt;text&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: fun.ascii<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+ascii ghost beep</code> -
+            <span data-v-0ef2f6a0="">Shows <code>beep</code> in the <code>ghost</code> font</span></div></div></div></div><div data-v-0ef2f6a0="" title="+chucknorris" class="command">
+      +chucknorris<span data-v-0ef2f6a0="" class="grey"> - Responds with a chuck norris joke.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+chucknorris </code><br data-v-0ef2f6a0="">
+        Permission node: fun.chucknorris<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+urban" class="command">
+      +urban<span data-v-0ef2f6a0="" class="grey"> - Searches the urban dictionary.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+urban &lt;term&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: fun.urban<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+uwu" class="command">
+      +uwu<span data-v-0ef2f6a0="" class="grey"> - uwu-ify a stwing</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+uwu &lt;input&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: fun.uwu<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+yomamma" class="command">
+      +yomamma<span data-v-0ef2f6a0="" class="grey"> - Responds with yo mamma jokes, they will probably be insulting!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+yomamma </code><br data-v-0ef2f6a0="">
+        Permission node: fun.yomamma<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+fortnite" class="command">
+      +fortnite<span data-v-0ef2f6a0="" class="grey"> - Looks up a user on fortnite.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+fortnite &lt;platform&gt; &lt;username&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: games.fortnite<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+osu" class="command">
+      +osu<span data-v-0ef2f6a0="" class="grey"> - Shows osu! stats for a user.
+Valid options are: `best`, `recent` and `user`.
+Valid modes are: `standard`, `taiko`, `ctb` and `mania`.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+osu &lt;option&gt; &lt;profile&gt; [mode=standard]</code><br data-v-0ef2f6a0="">
+        Permission node: games.osu<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+cat" class="command">
+      +cat<span data-v-0ef2f6a0="" class="grey"> - Shows a cute cat!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+cat </code><br data-v-0ef2f6a0="">
+        Permission node: image.cat<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+dog" class="command">
+      +dog<span data-v-0ef2f6a0="" class="grey"> - Shows a cute dog!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+dog </code><br data-v-0ef2f6a0="">
+        Permission node: image.dog<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+doge" class="command">
+      +doge<span data-v-0ef2f6a0="" class="grey"> - Shows a cute doge!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+doge </code><br data-v-0ef2f6a0="">
+        Permission node: image.doge<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+weeb" class="command">
+      +weeb<span data-v-0ef2f6a0="" class="grey"> - Shows some weeb images. See `+weeb types` for a list of types.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+weeb &lt;type&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: image.weeb<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+xkcd" class="command">
+      +xkcd<span data-v-0ef2f6a0="" class="grey"> - Gets an XKCD Comic</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+xkcd [comic]</code><br data-v-0ef2f6a0="">
+        Permission node: image.xkcd<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+help" class="command">
+      +help<span data-v-0ef2f6a0="" class="grey"> - Shows this command</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+help [command]</code><br data-v-0ef2f6a0="">
+        Permission node: info.help<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+invite" class="command">
+      +invite<span data-v-0ef2f6a0="" class="grey"> - Gets the URL to invite the bot.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+invite </code><br data-v-0ef2f6a0="">
+        Permission node: info.invite<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+ping" class="command">
+      +ping<span data-v-0ef2f6a0="" class="grey"> - Pong!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+ping </code><br data-v-0ef2f6a0="">
+        Permission node: info.ping<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+stats" class="command">
+      +stats<span data-v-0ef2f6a0="" class="grey"> - Shows stats about the bot</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+stats </code><br data-v-0ef2f6a0="">
+        Permission node: info.stats<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+drake" class="command">
+      +drake<span data-v-0ef2f6a0="" class="grey"> - Makes a drake meme. Arguments can be a user or an image URL.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+drake &lt;bad&gt; &lt;good&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: meme.drake<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+drake Tatsumaki Vexera</code> -
+            <span data-v-0ef2f6a0="">Drake meme, but Tatsu bad and Vexera good tbh</span></div></div></div></div><div data-v-0ef2f6a0="" title="+gmagik" class="command">
+      +gmagik<span data-v-0ef2f6a0="" class="grey"> - +magik but it's with gifs.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+gmagik [image=recent]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.gmagik<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+handicapped" class="command">
+      +handicapped<span data-v-0ef2f6a0="" class="grey"> - Sir! This spot is for the handicapped only!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+handicapped &lt;image&gt; &lt;text&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: meme.handicapped<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+logo" class="command">
+      +logo<span data-v-0ef2f6a0="" class="grey"> - Makes a vexera logo with custom text!</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+logo &lt;text1&gt; [text2]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.logo<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+magik" class="command">
+      +magik<span data-v-0ef2f6a0="" class="grey"> - The best command on the planet.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+magik [image=recent]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.magik<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+meme" class="command">
+      +meme<span data-v-0ef2f6a0="" class="grey"> - Sends a meme into the channel.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+meme </code><br data-v-0ef2f6a0="">
+        Permission node: meme.meme<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+mistake" class="command">
+      +mistake<span data-v-0ef2f6a0="" class="grey"> - For big mistakes.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+mistake [image=recent]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.mistake<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+needsmorejpeg" class="command">
+      +needsmorejpeg<span data-v-0ef2f6a0="" class="grey"> - Makes an image look worse.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+needsmorejpeg [image=recent]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.needsmorejpeg<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+nuke" class="command">
+      +nuke<span data-v-0ef2f6a0="" class="grey"> - Nuke an image</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+nuke [image=recent]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.nuke<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+whodidthis" class="command">
+      +whodidthis<span data-v-0ef2f6a0="" class="grey"> - WHO DID THIS? :joy: :joy: :joy:.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+whodidthis [image=recent]</code><br data-v-0ef2f6a0="">
+        Permission node: meme.whodidthis<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+botlist" class="command">
+      +botlist<span data-v-0ef2f6a0="" class="grey"> - Shows the carbonitex botlist.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+botlist [page=1]</code><br data-v-0ef2f6a0="">
+        Permission node: misc.botlist<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+invited" class="command">
+      +invited<span data-v-0ef2f6a0="" class="grey"> - Shows how many users someone has invited to a server.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+invited [member]</code><br data-v-0ef2f6a0="">
+        Permission node: misc.invited<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+remind" class="command">
+      +remind<span data-v-0ef2f6a0="" class="grey"> - Sets a reminder.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+remind &lt;when&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: misc.remind<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+remind 10m Play fortnite</code> -
+            <span data-v-0ef2f6a0="">Vexera will remind you in 10 minutes to play Fortnite.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+serverinfo" class="command">
+      +serverinfo<span data-v-0ef2f6a0="" class="grey"> - Shows info about a server</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+serverinfo </code><br data-v-0ef2f6a0="">
+        Permission node: misc.serverinfo<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+userinfo" class="command">
+      +userinfo<span data-v-0ef2f6a0="" class="grey"> - Shows info about a user.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+userinfo [user]</code><br data-v-0ef2f6a0="">
+        Permission node: misc.userinfo<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+wolfram" class="command">
+      +wolfram<span data-v-0ef2f6a0="" class="grey"> - Makes a wolfram query.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+wolfram &lt;query&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: misc.wolfram<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+play" class="command">
+      +play<span data-v-0ef2f6a0="" class="grey"> - Plays a track. A range of sites are supported.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+play &lt;track&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: music.play<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+play marble soda</code> -
+            <span data-v-0ef2f6a0="">Searches youtube for 'marble soda'</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+play https://soundcloud.com/sonevable/gin-wigmore-written-in-the-water-nev-edit</code> -
+            <span data-v-0ef2f6a0="">Plays a soundcloud track, using the direct URL</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+play https://www.youtube.com/watch?v=v372aagNItc</code> -
+            <span data-v-0ef2f6a0="">Plays a youtube video, using the direct URL</span></div></div></div></div><div data-v-0ef2f6a0="" title="+skip" class="command">
+      +skip<span data-v-0ef2f6a0="" class="grey"> - Voteskips a track. Users with the `music.forceskip` permission can instantly skip.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+skip [amount=1]</code><br data-v-0ef2f6a0="">
+        Permission node: music.skip<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+lyrics" class="command">
+      +lyrics<span data-v-0ef2f6a0="" class="grey"> - Gets lyrics for a track / the track currently playing.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+lyrics [query]</code><br data-v-0ef2f6a0="">
+        Permission node: music.lyrics<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+pause" class="command">
+      +pause<span data-v-0ef2f6a0="" class="grey"> - Pauses the music.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+pause </code><br data-v-0ef2f6a0="">
+        Permission node: music.pause<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+resume" class="command">
+      +resume<span data-v-0ef2f6a0="" class="grey"> - Resumes the music.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+resume </code><br data-v-0ef2f6a0="">
+        Permission node: music.resume<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+join" class="command">
+      +join<span data-v-0ef2f6a0="" class="grey"> - Joins a voice channel.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+join [node]</code><br data-v-0ef2f6a0="">
+        Permission node: music.join<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+np" class="command">
+      +np<span data-v-0ef2f6a0="" class="grey"> - Shows whats currently playing.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+np </code><br data-v-0ef2f6a0="">
+        Permission node: music.np<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+queue" class="command">
+      +queue<span data-v-0ef2f6a0="" class="grey"> - Shows the current track queue.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+queue [page]</code><br data-v-0ef2f6a0="">
+        Permission node: music.queue<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+back" class="command">
+      +back<span data-v-0ef2f6a0="" class="grey"> - Goes to the last track played.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+back </code><br data-v-0ef2f6a0="">
+        Permission node: music.back<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+clear" class="command">
+      +clear<span data-v-0ef2f6a0="" class="grey"> - Clears the queue.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+clear </code><br data-v-0ef2f6a0="">
+        Permission node: music.clear<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+delete" class="command">
+      +delete<span data-v-0ef2f6a0="" class="grey"> - Deletes a track from the queue.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+delete &lt;track&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: music.delete<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+jump" class="command">
+      +jump<span data-v-0ef2f6a0="" class="grey"> - Jumps to a specific place in the queue.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+jump &lt;amount&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: music.jump<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+leave" class="command">
+      +leave<span data-v-0ef2f6a0="" class="grey"> - Leaves the voice channel.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+leave </code><br data-v-0ef2f6a0="">
+        Permission node: music.leave<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+repeat" class="command">
+      +repeat<span data-v-0ef2f6a0="" class="grey"> - Repeats a track.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+repeat &lt;type&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: music.repeat<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+repeat off</code> -
+            <span data-v-0ef2f6a0="">Disable repeating.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+repeat one</code> -
+            <span data-v-0ef2f6a0="">Repeat the current track.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+repeat all</code> -
+            <span data-v-0ef2f6a0="">Repeat the whole queue.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+search" class="command">
+      +search<span data-v-0ef2f6a0="" class="grey"> - Allows you to choose a track to play with a fancy selection menu.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+search &lt;track&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: music.search<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+seek" class="command">
+      +seek<span data-v-0ef2f6a0="" class="grey"> - Seeks to a position in a track.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+seek &lt;position&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: music.seek<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+shuffle" class="command">
+      +shuffle<span data-v-0ef2f6a0="" class="grey"> - Shuffles the queue.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+shuffle </code><br data-v-0ef2f6a0="">
+        Permission node: music.shuffle<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+perms" class="command">
+      +perms<span data-v-0ef2f6a0="" class="grey"> - Assigns permissions to a role. For a list of permissions, see +perms nodes
+Permissions handled by SexyPEX</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+perms &lt;action&gt; [people] [permNode]</code><br data-v-0ef2f6a0="">
+        Permission node: perms.perms<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+perms add everyone music.*</code> -
+            <span data-v-0ef2f6a0="">Give everyone music permissions</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+perms deny Moderators image.cat</code> -
+            <span data-v-0ef2f6a0="">Dont allow the <code>Moderators</code> role to use the cat command</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+perms deny luke image.doge</code> -
+            <span data-v-0ef2f6a0="">Dont allow the user <code>luke</code> to use the doge command</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+perms list Moderators</code> -
+            <span data-v-0ef2f6a0="">List the permissions for the <code>Moderators</code> role</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+perms remove everyone music.*</code> -
+            <span data-v-0ef2f6a0="">Remove the music permissions from everyone</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+perms clear Moderators</code> -
+            <span data-v-0ef2f6a0="">Clear the permissions for the <code>Moderators</code> role</span></div></div></div></div><div data-v-0ef2f6a0="" title="+autoplay" class="command">
+      +autoplay<span data-v-0ef2f6a0="" class="grey"> - Sets a track or playlist or livestream to play while the queue is empty.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+autoplay &lt;query&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: premium.autoplay<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autoplay url</code> -
+            <span data-v-0ef2f6a0="">Enables autoplay with the specified URL.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+autoplay disable</code> -
+            <span data-v-0ef2f6a0="">Disables autoplay.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+bass" class="command">
+      +bass<span data-v-0ef2f6a0="" class="grey"> - Adjusts the bass for the music playing.
+Valid options: `none`, `weak`, `medium`, `strong`, `insane`, `wtf`.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+bass [bass]</code><br data-v-0ef2f6a0="">
+        Permission node: premium.bass<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+donators" class="command">
+      +donators<span data-v-0ef2f6a0="" class="grey"> - Shows the top 10 donators with a personalised message set by the donator. Donators can set their message using `+donators &lt;message&gt;`</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+donators [message]</code><br data-v-0ef2f6a0="">
+        Permission node: premium.donators<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+dump" class="command">
+      +dump<span data-v-0ef2f6a0="" class="grey"> - Creates a URL with information about the music queue, which can be loaded with +play. Use +dump all to dump the whole queue.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+dump [type=current]</code><br data-v-0ef2f6a0="">
+        Permission node: premium.dump<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+playlist" class="command">
+      +playlist<span data-v-0ef2f6a0="" class="grey"> - Allows you to save and load queues.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+playlist &lt;action&gt; [name]</code><br data-v-0ef2f6a0="">
+        Permission node: premium.playlist<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+playlist create Dubstep</code> -
+            <span data-v-0ef2f6a0="">Creates the playlist 'Dubstep' from the tracks currently in the queue.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+playlist load Dubstep</code> -
+            <span data-v-0ef2f6a0="">Loads the tracks from playlist 'Dubstep' into the queue.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+playlist delete Dubstep</code> -
+            <span data-v-0ef2f6a0="">Deletes the playlist 'Dubstep'</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+playlist share Dubstep</code> -
+            <span data-v-0ef2f6a0="">Creates a dump URL for the playlist 'Dubstep'</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+playlist list</code> -
+            <span data-v-0ef2f6a0="">Lists all playlists for this server.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+premium" class="command">
+      +premium<span data-v-0ef2f6a0="" class="grey"> - Displays premium information.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+premium </code><br data-v-0ef2f6a0="">
+        Permission node: premium.premium<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+redeem" class="command">
+      +redeem<span data-v-0ef2f6a0="" class="grey"> - Allows you to redeem a Vexera Premium key. Please note it will be activated on every server **you** own.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+redeem &lt;key&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: premium.redeem<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+status" class="command">
+      +status<span data-v-0ef2f6a0="" class="grey"> - Displays premium status.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+status [user]</code><br data-v-0ef2f6a0="">
+        Permission node: premium.status<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+transfer" class="command">
+      +transfer<span data-v-0ef2f6a0="" class="grey"> - Transfers a premium subscription to another user, use `+transfer disable` to disable.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+transfer &lt;user&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: premium.transfer<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+volume" class="command">
+      +volume<span data-v-0ef2f6a0="" class="grey"> - Sets the volume of the music playing.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+volume [volume]</code><br data-v-0ef2f6a0="">
+        Permission node: premium.volume<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+accessrole" class="command">
+      +accessrole<span data-v-0ef2f6a0="" class="grey"> - Sets a role that people have to have to use the bot. Use `+accessrole disable` to disable</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+accessrole &lt;role&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: settings.accessrole<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+channeltoggle" class="command">
+      +channeltoggle<span data-v-0ef2f6a0="" class="grey"> - Disables commands in a channel.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+channeltoggle </code><br data-v-0ef2f6a0="">
+        Permission node: settings.channeltoggle<br data-v-0ef2f6a0=""> <!----></div></div><div data-v-0ef2f6a0="" title="+farewell" class="command">
+      +farewell<span data-v-0ef2f6a0="" class="grey"> - Sets a message for when a user leaves the server.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+farewell &lt;channel&gt; [text]</code><br data-v-0ef2f6a0="">
+        Permission node: settings.farewell<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+farewell #general %username% left %server%... bye bye %username%...</code> -
+            <span data-v-0ef2f6a0="">Sends <code>luke left <your server="">... bye bye luke..</your></code> to #general when luke leaves your server.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+farewell disable</code> -
+            <span data-v-0ef2f6a0="">Disables the farewell</span></div></div></div></div><div data-v-0ef2f6a0="" title="+greeting" class="command">
+      +greeting<span data-v-0ef2f6a0="" class="grey"> - Sets a welcome message for the server.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+greeting &lt;channel&gt; [text]</code><br data-v-0ef2f6a0="">
+        Permission node: settings.greeting<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+greeting #general Welcome %mention% to %server%!</code> -
+            <span data-v-0ef2f6a0="">Sends <code>Welcome @luke to <your server="" name="">!</your></code> to #general when luke joins your server.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+greeting dm Welcome %username%!</code> -
+            <span data-v-0ef2f6a0="">Welcomes a user to your server in direct messages.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+greeting disable</code> -
+            <span data-v-0ef2f6a0="">Disables the greeting.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+locale" class="command">
+      +locale<span data-v-0ef2f6a0="" class="grey"> - Sets a locale. See `+locale list` for a list of locales.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+locale &lt;locale&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: settings.locale<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+locale fr</code> -
+            <span data-v-0ef2f6a0="">Sets the locale to french.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+log" class="command">
+      +log<span data-v-0ef2f6a0="" class="grey"> - Sets channels that will have events posted in them.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+log &lt;action&gt; &lt;channel&gt; [events]</code><br data-v-0ef2f6a0="">
+        Permission node: settings.log<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+log add #join-log joins leaves</code> -
+            <span data-v-0ef2f6a0="">Sends a message when a user joins or leaves</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+log add #mod-log infractions</code> -
+            <span data-v-0ef2f6a0="">Posts infractions (bans, kicks) into #mod-log</span></div></div></div></div><div data-v-0ef2f6a0="" title="+prefix" class="command">
+      +prefix<span data-v-0ef2f6a0="" class="grey"> - Sets the command prefix.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+prefix &lt;prefix&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: settings.prefix<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+prefix !</code> -
+            <span data-v-0ef2f6a0="">Sets the prefix to <code>!</code></span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+prefix disable</code> -
+            <span data-v-0ef2f6a0="">Disables the custom command prefix.</span></div></div></div></div><div data-v-0ef2f6a0="" title="+userlocale" class="command">
+      +userlocale<span data-v-0ef2f6a0="" class="grey"> - Sets the locale for the user. See `+userlocale list` for a list of locales.
+Use `+userlocale disable` to use the server's locale.</span> <div data-v-0ef2f6a0="" style="display: none;"><br data-v-0ef2f6a0="">
+        Usage: <code data-v-0ef2f6a0="">+userlocale &lt;locale&gt;</code><br data-v-0ef2f6a0="">
+        Permission node: settings.userlocale<br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><br data-v-0ef2f6a0="">
+          Examples:
+          <br data-v-0ef2f6a0=""> <div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+userlocale fr</code> -
+            <span data-v-0ef2f6a0="">Sets the locale to french.</span></div><div data-v-0ef2f6a0=""><code data-v-0ef2f6a0="">+userlocale disable</code> -
+            <span data-v-0ef2f6a0="">Disables your personal locale, and use the server's locale instead.</span></div></div></div></div> <div data-v-767b169a="" data-v-0ef2f6a0=""><div data-v-767b169a="" id="placement-commands-banner-bottom" class="np-placement" data-request-id="525eb3b3-d4ac-4fca-b330-0583a31fee9c" data-report="{&quot;enabled&quot;:true,&quot;wording&quot;:&quot;Report&quot;,&quot;position&quot;:&quot;bottom-right&quot;}" style="min-height: 90px; text-align: center; font-size: 0px; position: relative;" data-bidder="amazon" data-creative-id=""><iframe width="728px" height="90px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" title="advertisement" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-forms" srcdoc="<html><body style=&quot;margin:0; padding: 0; overflow: hidden;&quot;></body></html>" style="width: 728px; border: none; margin: 0px auto; display: block; height: 90px;"></iframe><img src="https://tracker.nitropay.com/pixel.png?s=329&amp;wb=eyJhZFVuaXRDb2RlIjoicGxhY2VtZW50LWNvbW1hbmRzLWJhbm5lci1ib3R0b20iLCJiaWRkZXIiOiJhbWF6b24iLCJ3aWR0aCI6NzI4LCJoZWlnaHQiOjkwLCJjcG0iOjAuNDcsImNyZWF0aXZlSWQiOiIiLCJocmVmIjoiaHR0cHM6Ly92ZXhlcmEuaW8vY29tbWFuZHMiLCJhY2NlcHRhYmxlIjpmYWxzZSwicmVxdWVzdElkIjoiNTI1ZWIzYjMtZDRhYy00ZmNhLWIzMzAtMDU4M2EzMWZlZTljIiwidGltZVRvUmVzcG9uZCI6NDQ2LCJjIjoiQlIiLCJyIjoiTUciLCJ0aW1lc3RhbXAiOjE2NDg4MjgxMDI2OTB9" style="display: none;"><div class="report-link" style="width: 728px; height: 20px; left: 50%; transform: translateX(-50%); z-index: 99998; text-align: right; top: 100px; position: absolute;"><a href="javascript:;" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px; text-transform: uppercase; text-decoration: none; color: rgb(119, 119, 119); display: inline-block; height: 10px; margin-top: 10px;">Report</a></div></div></div></div></div></div> <!----> <footer data-v-12e40afc="" data-v-6c4fae6b=""><div data-v-12e40afc="" class="container"><div data-v-12e40afc="" class="row"><div data-v-12e40afc="" class="col-12 col-md-6 footer-title"><h2 data-v-12e40afc="" class="">
+          Vexera
+        </h2> <br data-v-12e40afc="">
+        Serving 300,000+ servers
+        <br data-v-12e40afc=""> <span data-v-12e40afc="" title="Copyright"><svg data-v-12e40afc="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copyright" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-copyright fa-w-16"><path data-v-12e40afc="" fill="currentColor" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm117.134 346.753c-1.592 1.867-39.776 45.731-109.851 45.731-84.692 0-144.484-63.26-144.484-145.567 0-81.303 62.004-143.401 143.762-143.401 66.957 0 101.965 37.315 103.422 38.904a12 12 0 0 1 1.238 14.623l-22.38 34.655c-4.049 6.267-12.774 7.351-18.234 2.295-.233-.214-26.529-23.88-61.88-23.88-46.116 0-73.916 33.575-73.916 76.082 0 39.602 25.514 79.692 74.277 79.692 38.697 0 65.28-28.338 65.544-28.625 5.132-5.565 14.059-5.033 18.508 1.053l24.547 33.572a12.001 12.001 0 0 1-.553 14.866z" class=""></path></svg> 2022</span> <a data-v-12e40afc="" target="_blank" href="#/" title="Vex Holdings Limited" class="nohover">Vex Holdings Limited</a> <br data-v-12e40afc=""> <svg data-v-12e40afc="" aria-labelledby="svg-inline--fa-title-BuXugkbKN37v" data-prefix="fas" data-icon="drafting-compass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-drafting-compass fa-w-16"><title data-v-12e40afc="" id="svg-inline--fa-title-BuXugkbKN37v" class="">Design</title><path data-v-12e40afc="" fill="currentColor" d="M457.01 344.42c-25.05 20.33-52.63 37.18-82.54 49.05l54.38 94.19 53.95 23.04c9.81 4.19 20.89-2.21 22.17-12.8l7.02-58.25-54.98-95.23zm42.49-94.56c4.86-7.67 1.89-17.99-6.05-22.39l-28.07-15.57c-7.48-4.15-16.61-1.46-21.26 5.72C403.01 281.15 332.25 320 256 320c-23.93 0-47.23-4.25-69.41-11.53l67.36-116.68c.7.02 1.34.21 2.04.21s1.35-.19 2.04-.21l51.09 88.5c31.23-8.96 59.56-25.75 82.61-48.92l-51.79-89.71C347.39 128.03 352 112.63 352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96c0 16.63 4.61 32.03 12.05 45.66l-68.3 118.31c-12.55-11.61-23.96-24.59-33.68-39-4.79-7.1-13.97-9.62-21.38-5.33l-27.75 16.07c-7.85 4.54-10.63 14.9-5.64 22.47 15.57 23.64 34.69 44.21 55.98 62.02L0 439.66l7.02 58.25c1.28 10.59 12.36 16.99 22.17 12.8l53.95-23.04 70.8-122.63C186.13 377.28 220.62 384 256 384c99.05 0 190.88-51.01 243.5-134.14zM256 64c17.67 0 32 14.33 32 32s-14.33 32-32 32-32-14.33-32-32 14.33-32 32-32z" class=""></path></svg>
+        by
+        <a data-v-12e40afc="" href="https://skiletro.com/" target="_blank" title="Skiletro">Skiletro</a></div> <div data-v-12e40afc="" class="col-12 col-sm-4 col-md-2 link-list"><div data-v-12e40afc="" class="list-head">Vexera</div> <ul data-v-12e40afc=""><li data-v-12e40afc=""><a data-v-12e40afc="" href="/invite" title="Add to server">Add to server</a></li> <li data-v-12e40afc=""><a data-v-12e40afc="" href="/commands" class="nuxt-link-exact-active nuxt-link-active" title="Commands" aria-current="page">Commands</a></li> <li data-v-12e40afc=""><a data-v-12e40afc="" href="/premium" class="" title="Premium">Premium</a></li></ul></div> <div data-v-12e40afc="" class="col-12 col-sm-4 col-md-2 link-list"><div data-v-12e40afc="" class="list-head">Resources</div> <ul data-v-12e40afc=""><li data-v-12e40afc=""><a data-v-12e40afc="" href="/contact" class="" title="Contact">Contact</a></li> <li data-v-12e40afc=""><a data-v-12e40afc="" href="/partners" class="" title="Partners">Partners</a></li></ul></div> <div data-v-12e40afc="" class="col-12 col-sm-4 col-md-2 link-list"><div data-v-12e40afc="" class="list-head">Legal</div> <ul data-v-12e40afc=""><li data-v-12e40afc=""><a data-v-12e40afc="" href="/tos" class="" title="Terms of Service">Terms of Service</a></li> <li data-v-12e40afc=""><a data-v-12e40afc="" href="/privacy" class="" title="Privacy Policy">Privacy Policy</a></li> <li data-v-12e40afc=""><span data-v-12e40afc="" data-ccpa-link="1"></span></li></ul></div></div> <div data-v-12e40afc="" class="row legal"><div data-v-12e40afc="" class="col-12">
+        Vex Holdings Limited trading as Vexera is a Registered Company in England
+        &amp; Wales. Company Number 13833516
+      </div></div></div></footer></div></div></div><script type="text/javascript">window.__NUXT__=(function(a,b,c,d){return {layout:"default",data:[{}],fetch:{},error:a,state:{isFirstRender:b,auth:{token:a,expiresIn:a,obtainedAt:a},guilds:{guilds:{},original:{}},members:{guilds:{}},music:{guilds:{}},stats:{stats:{}},user:{self:{},guilds:[]}},serverRendered:b,routePath:c,config:{sentry:{config:{dsn:"https:\u002F\u002F9f8ed19a76964edf80a277fe397b7c89@sentry.tombowdit.ch\u002F4",release:"v2.0.0-c07de2d1",environment:"prod"}},_app:{basePath:c,assetsPath:"\u002F_nuxt\u002F",cdnURL:a}},env:{CLIENT_ID:"228537642583588864",BASE_URL:d,API_URL:d,PREFIX:"+",LIVE_ADS:"TRUE"}}}(null,true,"\u002F","https:\u002F\u002Fvexera.io"));</script><script src="/_nuxt/f341156.modern.js" defer="" type="text/javascript"></script><script src="/_nuxt/6ebf942.modern.js" defer="" type="text/javascript"></script><script src="/_nuxt/dbdc7c4.modern.js" defer="" type="text/javascript"></script><script src="/_nuxt/bbe938d.modern.js" defer="" type="text/javascript"></script><script src="/_nuxt/d92f919.modern.js" defer="" type="text/javascript"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6f52777a3ced4d2a&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;0266c1bd2b2e494c9e7508a66778416c&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+<iframe name="__uspapiLocator" style="display: none;"></iframe><iframe name="__tcfapiLocator" style="display: none;"></iframe><link href="/_nuxt/css/f3d7ebf.css" rel="stylesheet" type="text/css"><img src="https://ad.doubleclick.net/favicon.ico?ad=300x250&amp;ad_box_=1&amp;adnet=1&amp;showad=1&amp;size=250x250" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="https://ad-delivery.net/px.gif?ch=1&amp;e=0.8363248336209035" style="display: none !important; width: 1px !important; height: 1px !important;"><div id="ncmp__tool" class="ncmp__normalise"><div class="ncmp__banner">
+    <div class="ncmp__banner-inner">
+        <div class="ncmp__language">
+            <a href="javascript:;" class="ncmp__language-picker">
+                <img src="https://consent.nit.ro/lang.png" alt="Language Picker">
+                <span>Português</span>
+            </a>
+            <div class="ncmp__language-list">
+                <a href="javascript:;" class="ncmp__language-close">
+                    <img src="https://consent.nit.ro/cancel.png" alt="Close Language Picker">
+                </a>
+                <ul>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('de')">Deutsch</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('en')">English</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('es')">Español</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('fr')">Français</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('it')">Italiano</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('nl')">Nederlands</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('pl')">Polski</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('pt')">Português</a></li>
+                    
+                    <li><a href="javascript:;" onclick="__cmp('language')('ro')">Limba română</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="ncmp__banner-info">
+            <div class="ncmp__banner-sections">
+                <div class="ncmp__banner-section-1">
+                    <h2>Controle a sua privacidade</h2>
+                    
+                    <p>Quando utiliza este website, nós e a nossa <a href="javascript:;" onclick="__cmp('showModal').navigate('vendors')">fornecedores</a> processamos dados seus e do seu dispositivo. Estes dados podem incluir o seu tipo de navegador, definições, cookies, identificadores exclusivos, endereço IP e localização geográfica. Uma vez descartadas, estas definições podem ser acedidas novamente a partir da hiperligação na nossa política de privacidade ou no rodapé da página.</p>
+                </div>
+
+                <div class="ncmp__banner-section-2">
+                    <p class="ncmp__banner-emphasis">
+                        Pedimos autorização para oferecer:
+                        <strong>Anúncios e conteúdos personalizados, medição de anúncios e conteúdos, perspetivas sobre o público e desenvolvimento de produtos</strong>
+                    </p>
+
+                    <p>
+                        Os anúncios e os conteúdos podem ser personalizados com base num perfil. Podem ser adicionados mais dados para personalizar melhor os anúncios e os conteúdos. O desempenho dos anúncios e dos conteúdos pode ser medido. As perspetivas sobre os públicos que viram os anúncios e conteúdos podem ser derivadas. Os dados podem ser utilizados para criar ou melhorar a experiência do utilizador, sistemas e software.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ncmp__banner-actions">
+            <div class="ncmp__banner-btns">
+                <button onclick="__cmp('showModal')" class="ncmp__btn ncmp__btn-border">
+                    Definições Avançadas
+                </button>
+                <button onclick="__cmp('save')" class="ncmp__btn">
+                    Aceitar
+                </button>
+            </div>
+
+            <div class="ncmp__banner-consent">
+                <div class="ncmp__banner-branding-btn">
+                    <a href="https://nitropay.com" target="_blank" rel="noopener">
+                        <img src="https://consent.nit.ro/logo.png" alt="NitroPay">
+                    </a>
+                </div>
+                <p>
+                    Os seus consentimentos são específicos para este website e dispositivo.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div><link href="/_nuxt/css/30d1b46.css" rel="stylesheet" type="text/css"><link href="/_nuxt/css/7ac7546.css" rel="stylesheet" type="text/css"><link href="/_nuxt/css/1ce2707.css" rel="stylesheet" type="text/css"><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;gdpr=1&amp;gdpr_consent=CPWxzMmPWxzMmDyf3BPTCICgAP_AAH_AAAAAIqNd_X__bX9j-_5_f_t0eY1P9_r3_-QzjhfNt-8F3L_W_L0X42E7NF36pq4KuR4Eu3LBIQNlHMHUTUmwaokVrzHsak2cpyNKJ7LEmnMZO2dYGHtPn9lDuYKY7_5___bz3j-v_t_-39T378Xf3_d5_2---vCfV599jLv9f___39nP___9v-_8_______BFMAkw1LyALsSxwZNo0qhRAjCsJCqBQAUUAwtEVgA4OCnZWAT6ghYAIBUBGBECDEFGDAIABAIAkIiAkALBAIgCIBAACABEAhAARMAgsALAwCAAUA0LEAKAAQJCDI4IjlMCAiRKKCWysQSgr2NMIAyywAoFEZFQAIkCABYGQkLBzHAEgJcLJAkxQvkAIwAAAAA.YAAAAAAAAAAA&amp;dl=n-LoopMe_n-Outbrain" style="display: none;"></iframe><link href="/_nuxt/css/de4477b.css" rel="stylesheet" type="text/css"><link href="/_nuxt/css/60516c1.css" rel="stylesheet" type="text/css"><link href="/_nuxt/css/dbdb7f4.css" rel="stylesheet" type="text/css"><link href="/_nuxt/css/94a09d9.css" rel="stylesheet" type="text/css"></body>
