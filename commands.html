@@ -43,20 +43,25 @@
       </div>
     </nav>
     <div class="line z2"></div>
-    <h1 class="title h1 tWhite tCap">Lista de Comandos</h1>
+    <h1 class="title h1 tWhite tCap">Meu Prefixo: .</h1>
 <div class="content_master sRadius" id="commands">
   <div class="loader" style="display: none;"></div>
   <div class="cmd_filters" style="display: flex;">
-    <select id="cmd_category" class="fs14 tWhite sRadius tUp" onchange="searchFilter(document.getElementById('cmd_search').value)"><option value="0">all</option><option value="1">meta</option><option value="2">playback</option><option value="3">track state</option><option value="4">queue state</option><option value="5">information</option><option value="6">profile</option><option value="7">collection</option><option value="8">game</option><option value="9">settings</option><option value="10">permissions</option><option value="11">owner</option><option value="12">prefix</option><option value="13">server</option><option value="14">user</option><option value="15">custom mappings</option><option value="16">custom command aliases</option><option value="17">premium</option><option value="18">other</option></select>
   </div>
-  <div id="cmds" style="display: initial;"><div class="cmd_container sRadius" category="meta" id="clear">
-        <h3 class="cmd_title h3 tWhite">.clear<div class="url_btn elm2Hover" tooltip="Copiar" onclick="cmdClick(this)">
+  <div id="cmds" style="display: initial;"><div class="cmd_container sRadius" category="diversao" id="clear">
+        <h3 class="cmd_title h3 tWhite">clear<div class="url_btn elm2Hover" tooltip="Copiar" onclick="cmdClick(this)">
     <img src="https://www.jockiemusic.com/assets/imgs/icons/link.svg" alt="url_btn">
   </div></h3>
         <div class="cmd_description"><div class="fs20 tWhite fw400"><p>Deleta todas as mensagens no chat onde o comando foi executado</p></div></div>
         
-</div><div class="cmd_container sRadius" category="moderacao" id="donate" style="">
-        <h3 class="cmd_title h3 tWhite">.antilink<div class="url_btn elm2Hover" tooltip="Copiar" onclick="cmdClick(this)">
+</div><div class="cmd_container sRadius" category="moderacao" id="antilink" style="">
+        <h3 class="cmd_title h3 tWhite">antilink<div class="url_btn elm2Hover" tooltip="Copiar" onclick="">
+    <img src="https://www.jockiemusic.com/assets/imgs/icons/link.svg" alt="url_btn">
+  </div></h3>
+        <div class="cmd_description"><div class="fs20 tWhite fw400"><p>Use .antilink (on/off) [Protecao contra Links]</p></div></div>
+      
+    </div><div class="cmd_container sRadius" category="diversao" id="msglogsdel" style="">
+        <h3 class="cmd_title h3 tWhite">antilink<div class="url_btn elm2Hover" tooltip="Copiar" onclick="">
     <img src="https://www.jockiemusic.com/assets/imgs/icons/link.svg" alt="url_btn">
   </div></h3>
         <div class="cmd_description"><div class="fs20 tWhite fw400"><p>Use .antilink (on/off) [Protecao contra Links]</p></div></div>
